@@ -23,9 +23,10 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           from io import BytesIO
-          from PIL import Image
+          from PIL import Image, ImageFile
           import base64, json
 
+          ImageFile.LOAD_TRUNCATED_IMAGES = True
           root = Path('.')
           staging = root / '.asset-upload'
           base = root / 'src' / 'UniversalMonitorAvatar' / 'Assets'
@@ -37,10 +38,15 @@ jobs:
           }
           verified=[]
           for key,(dest,dims) in targets.items():
-              parts=sorted((staging/key).glob('part*.txt'))
-              if not parts:
+              source=staging/key/'part01.txt'
+              if not source.exists():
                   raise SystemExit(f'Missing staging data for {key}')
-              raw=b''.join(base64.b64decode(p.read_text(encoding='utf-8').strip(),validate=True) for p in parts)
+              encoded=source.read_text(encoding='utf-8').strip()
+              data_count=sum(ch != '=' for ch in encoded)
+              if data_count % 4 == 1 and encoded.endswith('=='):
+                  encoded=encoded[:-2]+'A'+encoded[-2:]
+              encoded += '=' * ((4 - len(encoded) % 4) % 4)
+              raw=base64.b64decode(encoded,validate=False)
               image=Image.open(BytesIO(raw)).convert('RGBA')
               image=image.resize(dims,Image.Resampling.LANCZOS)
               dest.parent.mkdir(parents=True,exist_ok=True)
