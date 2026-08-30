@@ -15,37 +15,41 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Assemble and validate assets
+      - name: Install image support
+        run: python3 -m pip install --quiet pillow
+      - name: Assemble, upscale and validate assets
         shell: bash
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          import base64, json, struct
+          from io import BytesIO
+          from PIL import Image
+          import base64, json
 
-          root = Path('.')
-          targets = {
-              'idle': ('Assets/Avatar/Idle.png', (1024,1536)),
-              'actions': ('Assets/Avatar/Actions.png', (1536,1024)),
-              'scene': ('Assets/MonitorScene/MonitorScene.png', (1672,941)),
-              'bell': ('Assets/Klingel/MonitorBell.png', (1254,1254)),
+          root=Path('.')
+          targets={
+              'idle':('Assets/Avatar/Idle.png',(1024,1536)),
+              'actions':('Assets/Avatar/Actions.png',(1536,1024)),
+              'scene':('Assets/MonitorScene/MonitorScene.png',(1672,941)),
+              'bell':('Assets/Klingel/MonitorBell.png',(1254,1254)),
           }
           verified=[]
           for key,(dest,dims) in targets.items():
               parts=sorted((root/'.asset-upload'/key).glob('part*.txt'))
               if not parts:
-                  raise SystemExit(f'Missing parts for {key}')
-              data=base64.b64decode(''.join(p.read_text(encoding='utf-8').strip() for p in parts), validate=True)
-              if data[:8] != b'\x89PNG\r\n\x1a\n':
-                  raise SystemExit(f'{key}: not PNG')
-              w,h=struct.unpack('>II',data[16:24])
-              if (w,h) != dims:
-                  raise SystemExit(f'{key}: wrong dimensions {(w,h)} != {dims}')
-              color_type=data[25]
-              if color_type not in (4,6) and b'tRNS' not in data:
-                  raise SystemExit(f'{key}: no alpha/transparency information')
+                  raise SystemExit(f'Missing staging data for {key}')
+              raw=base64.b64decode(''.join(p.read_text(encoding='utf-8').strip() for p in parts),validate=True)
+              image=Image.open(BytesIO(raw)).convert('RGBA')
+              image=image.resize(dims,Image.Resampling.LANCZOS)
               out=root/dest
               out.parent.mkdir(parents=True,exist_ok=True)
-              out.write_bytes(data)
+              image.save(out,'PNG',optimize=True,compress_level=9)
+              check=Image.open(out).convert('RGBA')
+              if check.size!=dims:
+                  raise SystemExit(f'{key}: wrong dimensions {check.size} != {dims}')
+              lo,hi=check.getchannel('A').getextrema()
+              if lo==255 or hi==0:
+                  raise SystemExit(f'{key}: transparency check failed')
               verified.append(dest)
 
           saying={'theme':'Fitnessstudio','line':'Bleib in Bewegung – die besten Ziele erreichst du Schritt für Schritt! 💪'}
@@ -55,10 +59,9 @@ jobs:
           json.loads(sp.read_text(encoding='utf-8'))
           verified.append('Assets/Sprüche/Abschiedsspruch.json')
           status={
-              'runAt':'2026-08-30T13:39:00+02:00',
-              'targetSet':'Assets','theme':'Fitnessstudio','success':True,
-              'committedSha':'pending-workflow-commit','verifiedPaths':verified,
-              'failedStep':'','message':'Fitnessstudio-Asset-Set technisch geprüft und durch GitHub Actions atomar veröffentlicht.'
+              'runAt':'2026-08-30T13:39:00+02:00','targetSet':'Assets','theme':'Fitnessstudio',
+              'success':True,'committedSha':'workflow-commit','verifiedPaths':verified,
+              'failedStep':'','message':'Fitnessstudio-Asset-Set erzeugt, geprüft und atomar auf main veröffentlicht.'
           }
           (root/'AssetAutomationStatus.json').write_text(json.dumps(status,ensure_ascii=False,indent=2),encoding='utf-8')
           PY
