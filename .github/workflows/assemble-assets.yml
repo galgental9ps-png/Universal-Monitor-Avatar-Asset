@@ -3,7 +3,7 @@ name: Assemble Universal Asset Set
 on:
   push:
     paths:
-      - '.asset-upload2/trigger.txt'
+      - '.asset-upload/trigger.txt'
 
 permissions:
   contents: write
@@ -27,7 +27,7 @@ jobs:
           import base64, json
 
           root = Path('.')
-          staging = root / '.asset-upload2'
+          staging = root / '.asset-upload'
           base = root / 'src' / 'UniversalMonitorAvatar' / 'Assets'
           targets = {
               'idle': (base/'Avatar'/'Idle.png', (1024,1536)),
@@ -76,7 +76,6 @@ jobs:
           verified.append(str(fb).replace('\\','/'))
 
           status={
-              'runAt':'2026-08-30T14:30:00+02:00',
               'targetSet':'src/UniversalMonitorAvatar/Assets',
               'theme':'Fitnessstudio',
               'success':True,
@@ -95,7 +94,7 @@ jobs:
           rm -f src/UniversalMonitorAvatar/Assets/Avatar/.gitkeep
           rm -f src/UniversalMonitorAvatar/Assets/MonitorScene/.gitkeep
           rm -f src/UniversalMonitorAvatar/Assets/Klingel/.gitkeep
-          git rm -rf .asset-upload2
+          git rm -rf .asset-upload
           git add src/UniversalMonitorAvatar/Assets AssetAutomationStatus.json
           git commit -m 'src/UniversalMonitorAvatar/Assets: Fitnessstudio Universal Asset-Set'
           git push origin HEAD:main
