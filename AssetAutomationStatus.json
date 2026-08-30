@@ -1,10 +1,16 @@
 {
-  "runAt": "2026-08-30T14:49:00+02:00",
-  "targetSet": "src/UniversalMonitorAvatar/Assets",
-  "theme": "Fitnessstudio",
-  "success": false,
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "pending-final-commit",
-  "message": "Finaler atomarer Commit und Rückprüfung stehen unmittelbar bevor."
+  "runAt": "2026-08-30T18:38:41+02:00",
+  "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 1",
+  "theme": "Hotel & Empfang",
+  "success": true,
+  "committedSha": "0e8b0ecc4a0203163432b25eb5ed3d6accc0a33e",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 1/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 1/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 1/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 1/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 1/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": "",
+  "message": "Hotel-&-Empfang-Set atomar veröffentlicht und alle fünf Pflichtpfade direkt auf GitHub main rückverifiziert."
 }
