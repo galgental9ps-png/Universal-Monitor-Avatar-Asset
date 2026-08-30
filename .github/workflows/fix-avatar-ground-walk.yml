@@ -1,0 +1,69 @@
+name: Fix Avatar Ground and Walk PNG
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-avatar-ground-walk.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Pillow
+        run: python3 -m pip install --quiet pillow
+
+      - name: Correct PNG ground and walking frames
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+
+          root = Path('src/UniversalMonitorAvatar/Assets')
+          idle_path = root / 'Avatar' / 'Idle.png'
+          actions_path = root / 'Avatar' / 'Actions.png'
+
+          # Idle: move the complete visible avatar a little lower inside the
+          # unchanged 1024x1536 canvas. This changes only PNG alignment.
+          idle = Image.open(idle_path).convert('RGBA')
+          shift = 10
+          lowered = Image.new('RGBA', idle.size, (0, 0, 0, 0))
+          lowered.alpha_composite(idle, (0, shift))
+          lowered.save(idle_path, 'PNG', optimize=True, compress_level=9)
+
+          # Actions: the app alternates frame 1 and 2 while walking.
+          # Make frame 2 visibly different by using the existing right-facing
+          # running/stride pose from frame 3. Direction remains RIGHT so the
+          # app can mirror the whole sprite when returning.
+          sheet = Image.open(actions_path).convert('RGBA')
+          cols, rows = 4, 2
+          cw, ch = sheet.width // cols, sheet.height // rows
+          frame3 = sheet.crop((3*cw, 0, 4*cw, ch))
+          frame2_box = (2*cw, 0, 3*cw, ch)
+          sheet.paste((0, 0, 0, 0), frame2_box)
+          sheet.alpha_composite(frame3, (2*cw, 0))
+          sheet.save(actions_path, 'PNG', optimize=True, compress_level=9)
+
+          # Technical checks
+          assert Image.open(idle_path).size == (1024, 1536)
+          assert Image.open(actions_path).size == (1536, 1024)
+          assert Image.open(idle_path).convert('RGBA').getchannel('A').getextrema()[0] < 255
+          assert Image.open(actions_path).convert('RGBA').getchannel('A').getextrema()[0] < 255
+          PY
+
+      - name: Commit corrected PNGs
+        shell: bash
+        run: |
+          git config user.name 'Universal Asset Fix'
+          git config user.email 'actions@users.noreply.github.com'
+          git rm .github/workflows/fix-avatar-ground-walk.yml
+          git add src/UniversalMonitorAvatar/Assets/Avatar/Idle.png src/UniversalMonitorAvatar/Assets/Avatar/Actions.png
+          git commit -m 'Fix avatar ground position and incoming walk animation'
+          git push origin HEAD:main
