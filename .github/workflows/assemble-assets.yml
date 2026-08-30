@@ -27,11 +27,12 @@ jobs:
           import base64, json
 
           root=Path('.')
+          base=root/'src'/'UniversalMonitorAvatar'/'Assets'
           targets={
-              'idle':('Assets/Avatar/Idle.png',(1024,1536)),
-              'actions':('Assets/Avatar/Actions.png',(1536,1024)),
-              'scene':('Assets/MonitorScene/MonitorScene.png',(1672,941)),
-              'bell':('Assets/Klingel/MonitorBell.png',(1254,1254)),
+              'idle':(base/'Avatar'/'Idle.png',(1024,1536)),
+              'actions':(base/'Avatar'/'Actions.png',(1536,1024)),
+              'scene':(base/'MonitorScene'/'MonitorScene.png',(1672,941)),
+              'bell':(base/'Klingel'/'MonitorBell.png',(1254,1254)),
           }
           verified=[]
           for key,(dest,dims) in targets.items():
@@ -41,27 +42,41 @@ jobs:
               raw=base64.b64decode(''.join(p.read_text(encoding='utf-8').strip() for p in parts),validate=True)
               image=Image.open(BytesIO(raw)).convert('RGBA')
               image=image.resize(dims,Image.Resampling.LANCZOS)
-              out=root/dest
-              out.parent.mkdir(parents=True,exist_ok=True)
-              image.save(out,'PNG',optimize=True,compress_level=9)
-              check=Image.open(out).convert('RGBA')
+              dest.parent.mkdir(parents=True,exist_ok=True)
+              image.save(dest,'PNG',optimize=True,compress_level=9)
+              check=Image.open(dest).convert('RGBA')
               if check.size!=dims:
                   raise SystemExit(f'{key}: wrong dimensions {check.size} != {dims}')
               lo,hi=check.getchannel('A').getextrema()
               if lo==255 or hi==0:
                   raise SystemExit(f'{key}: transparency check failed')
-              verified.append(dest)
+              verified.append(str(dest).replace('\\','/'))
 
           saying={'theme':'Fitnessstudio','line':'Bleib in Bewegung – die besten Ziele erreichst du Schritt für Schritt! 💪'}
-          sp=root/'Assets/Sprüche/Abschiedsspruch.json'
+          sp=base/'Sprüche'/'Abschiedsspruch.json'
           sp.parent.mkdir(parents=True,exist_ok=True)
           sp.write_text(json.dumps(saying,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
           json.loads(sp.read_text(encoding='utf-8'))
-          verified.append('Assets/Sprüche/Abschiedsspruch.json')
+          verified.append(str(sp).replace('\\','/'))
+
+          fallback={
+              'purpose':'Universelle Standardsprüche als Reserve, falls ein Asset-Set keinen eigenen Abschiedsspruch enthält.',
+              'lines':[
+                  'Bis gleich – ich bin beim nächsten Klingeln wieder da.',
+                  'Ich bin kurz weg und beim nächsten Signal wieder zur Stelle.',
+                  'Bis zum nächsten Mal – der Monitor hält solange die Stellung.',
+                  'Ich verschwinde kurz hinter die Kulissen und bin gleich wieder da.',
+                  'Für heute bin ich raus – bis zum nächsten Klingeln!'
+              ]
+          }
+          fb=base/'Sprüche'/'Fallback.json'
+          fb.write_text(json.dumps(fallback,ensure_ascii=False,indent=2),encoding='utf-8')
+          verified.append(str(fb).replace('\\','/'))
+
           status={
-              'runAt':'2026-08-30T13:39:00+02:00','targetSet':'Assets','theme':'Fitnessstudio',
+              'runAt':'2026-08-30T13:39:00+02:00','targetSet':'src/UniversalMonitorAvatar/Assets','theme':'Fitnessstudio',
               'success':True,'committedSha':'workflow-commit','verifiedPaths':verified,
-              'failedStep':'','message':'Fitnessstudio-Asset-Set erzeugt, geprüft und atomar auf main veröffentlicht.'
+              'failedStep':'','message':'Fitnessstudio-Asset-Set erzeugt, geprüft und unter src/UniversalMonitorAvatar/Assets auf main veröffentlicht.'
           }
           (root/'AssetAutomationStatus.json').write_text(json.dumps(status,ensure_ascii=False,indent=2),encoding='utf-8')
           PY
@@ -71,6 +86,6 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git rm -rf .asset-upload
-          git add Assets AssetAutomationStatus.json
-          git commit -m 'Assets: Fitnessstudio Universal Asset-Set'
+          git add src/UniversalMonitorAvatar/Assets AssetAutomationStatus.json
+          git commit -m 'src/UniversalMonitorAvatar/Assets: Fitnessstudio Universal Asset-Set'
           git push origin HEAD:main
