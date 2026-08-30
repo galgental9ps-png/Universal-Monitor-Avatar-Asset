@@ -1,0 +1,73 @@
+name: Assemble Universal Asset Set
+
+on:
+  push:
+    paths:
+      - '.asset-upload/trigger.txt'
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Assemble and validate assets
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import base64, json, struct
+
+          root = Path('.')
+          targets = {
+              'idle': ('Assets/Avatar/Idle.png', (1024,1536)),
+              'actions': ('Assets/Avatar/Actions.png', (1536,1024)),
+              'scene': ('Assets/MonitorScene/MonitorScene.png', (1672,941)),
+              'bell': ('Assets/Klingel/MonitorBell.png', (1254,1254)),
+          }
+          verified=[]
+          for key,(dest,dims) in targets.items():
+              parts=sorted((root/'.asset-upload'/key).glob('part*.txt'))
+              if not parts:
+                  raise SystemExit(f'Missing parts for {key}')
+              data=base64.b64decode(''.join(p.read_text(encoding='utf-8').strip() for p in parts), validate=True)
+              if data[:8] != b'\x89PNG\r\n\x1a\n':
+                  raise SystemExit(f'{key}: not PNG')
+              w,h=struct.unpack('>II',data[16:24])
+              if (w,h) != dims:
+                  raise SystemExit(f'{key}: wrong dimensions {(w,h)} != {dims}')
+              color_type=data[25]
+              if color_type not in (4,6) and b'tRNS' not in data:
+                  raise SystemExit(f'{key}: no alpha/transparency information')
+              out=root/dest
+              out.parent.mkdir(parents=True,exist_ok=True)
+              out.write_bytes(data)
+              verified.append(dest)
+
+          saying={'theme':'Fitnessstudio','line':'Bleib in Bewegung – die besten Ziele erreichst du Schritt für Schritt! 💪'}
+          sp=root/'Assets/Sprüche/Abschiedsspruch.json'
+          sp.parent.mkdir(parents=True,exist_ok=True)
+          sp.write_text(json.dumps(saying,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+          json.loads(sp.read_text(encoding='utf-8'))
+          verified.append('Assets/Sprüche/Abschiedsspruch.json')
+          status={
+              'runAt':'2026-08-30T13:39:00+02:00',
+              'targetSet':'Assets','theme':'Fitnessstudio','success':True,
+              'committedSha':'pending-workflow-commit','verifiedPaths':verified,
+              'failedStep':'','message':'Fitnessstudio-Asset-Set technisch geprüft und durch GitHub Actions atomar veröffentlicht.'
+          }
+          (root/'AssetAutomationStatus.json').write_text(json.dumps(status,ensure_ascii=False,indent=2),encoding='utf-8')
+          PY
+      - name: Commit asset set atomically
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm -rf .asset-upload
+          git add Assets AssetAutomationStatus.json
+          git commit -m 'Assets: Fitnessstudio Universal Asset-Set'
+          git push origin HEAD:main
