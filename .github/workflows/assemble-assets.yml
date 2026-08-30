@@ -40,8 +40,7 @@ jobs:
               parts=sorted((staging/key).glob('part*.txt'))
               if not parts:
                   raise SystemExit(f'Missing staging data for {key}')
-              encoded=''.join(p.read_text(encoding='utf-8').strip() for p in parts)
-              raw=base64.b64decode(encoded,validate=True)
+              raw=b''.join(base64.b64decode(p.read_text(encoding='utf-8').strip(),validate=True) for p in parts)
               image=Image.open(BytesIO(raw)).convert('RGBA')
               image=image.resize(dims,Image.Resampling.LANCZOS)
               dest.parent.mkdir(parents=True,exist_ok=True)
