@@ -3,7 +3,7 @@ name: Assemble Universal Asset Set
 on:
   push:
     paths:
-      - '.asset-upload/trigger.txt'
+      - '.asset-source/trigger.txt'
 
 permissions:
   contents: write
@@ -22,32 +22,27 @@ jobs:
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          from io import BytesIO
-          from PIL import Image, ImageFile
-          import base64, json
+          from PIL import Image
+          from datetime import datetime, timezone
+          import json
 
-          ImageFile.LOAD_TRUNCATED_IMAGES = True
           root = Path('.')
-          staging = root / '.asset-upload'
+          source_dir = root / '.asset-source'
           base = root / 'src' / 'UniversalMonitorAvatar' / 'Assets'
           targets = {
-              'idle': (base/'Avatar'/'Idle.png', (1024,1536)),
-              'actions': (base/'Avatar'/'Actions.png', (1536,1024)),
-              'scene': (base/'MonitorScene'/'MonitorScene.png', (1672,941)),
-              'bell': (base/'Klingel'/'MonitorBell.png', (1254,1254)),
+              'idle': (source_dir/'idle.png', base/'Avatar'/'Idle.png', (1024,1536)),
+              'actions': (source_dir/'actions.png', base/'Avatar'/'Actions.png', (1536,1024)),
+              'scene': (source_dir/'scene.png', base/'MonitorScene'/'MonitorScene.png', (1672,941)),
+              'bell': (source_dir/'bell.png', base/'Klingel'/'MonitorBell.png', (1254,1254)),
           }
           verified=[]
-          for key,(dest,dims) in targets.items():
-              source=staging/key/'part01.txt'
+          for key,(source,dest,dims) in targets.items():
               if not source.exists():
-                  raise SystemExit(f'Missing staging data for {key}')
-              encoded=source.read_text(encoding='utf-8').strip()
-              data_count=sum(ch != '=' for ch in encoded)
-              if data_count % 4 == 1 and encoded.endswith('=='):
-                  encoded=encoded[:-2]+'A'+encoded[-2:]
-              encoded += '=' * ((4 - len(encoded) % 4) % 4)
-              raw=base64.b64decode(encoded,validate=False)
-              image=Image.open(BytesIO(raw)).convert('RGBA')
+                  raise SystemExit(f'Missing source PNG for {key}')
+              image=Image.open(source).convert('RGBA')
+              lo0,hi0=image.getchannel('A').getextrema()
+              if lo0 == 255 or hi0 == 0:
+                  raise SystemExit(f'{key}: source transparency check failed')
               image=image.resize(dims,Image.Resampling.LANCZOS)
               dest.parent.mkdir(parents=True,exist_ok=True)
               image.save(dest,'PNG',optimize=True,compress_level=9)
@@ -78,16 +73,18 @@ jobs:
           }
           fb=base/'Sprüche'/'Fallback.json'
           fb.write_text(json.dumps(fallback,ensure_ascii=False,indent=2),encoding='utf-8')
+          json.loads(fb.read_text(encoding='utf-8'))
           verified.append(str(fb).replace('\\','/'))
 
           status={
+              'runAt':datetime.now(timezone.utc).isoformat(),
               'targetSet':'src/UniversalMonitorAvatar/Assets',
               'theme':'Fitnessstudio',
               'success':True,
               'committedSha':'workflow-commit',
               'verifiedPaths':verified,
               'failedStep':'',
-              'message':'Fitnessstudio-Asset-Set erzeugt und unter src/UniversalMonitorAvatar/Assets validiert.'
+              'message':'Fitnessstudio-Asset-Set erzeugt, geprüft und unter src/UniversalMonitorAvatar/Assets veröffentlicht.'
           }
           (root/'AssetAutomationStatus.json').write_text(json.dumps(status,ensure_ascii=False,indent=2),encoding='utf-8')
           PY
@@ -99,7 +96,7 @@ jobs:
           rm -f src/UniversalMonitorAvatar/Assets/Avatar/.gitkeep
           rm -f src/UniversalMonitorAvatar/Assets/MonitorScene/.gitkeep
           rm -f src/UniversalMonitorAvatar/Assets/Klingel/.gitkeep
-          git rm -rf .asset-upload
+          git rm -rf .asset-source
           git add src/UniversalMonitorAvatar/Assets AssetAutomationStatus.json
           git commit -m 'src/UniversalMonitorAvatar/Assets: Fitnessstudio Universal Asset-Set'
           git push origin HEAD:main
