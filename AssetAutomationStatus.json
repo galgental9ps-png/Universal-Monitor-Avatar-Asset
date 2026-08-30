@@ -1,17 +1,17 @@
 {
-  "runAt": "2026-08-30T14:34:09+02:00",
-  "targetSet": "src/UniversalMonitorAvatar/Assets",
+  "runAt": "2026-08-30T14:58:52+02:00",
+  "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 1",
   "theme": "Fitnessstudio",
   "success": true,
-  "committedSha": "ed973d34c61b60446d185eb95aec3b801dd382e0",
+  "committedSha": "a6b1c456af6648b9e61c0b1c90db64efa3061ef4",
   "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Sprüche/Abschiedsspruch.json",
-    "src/UniversalMonitorAvatar/Assets/Sprüche/Fallback.json"
+    "src/UniversalMonitorAvatar/Assets/Assets 1/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 1/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 1/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 1/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 1/Sprüche/Abschiedsspruch.json",
+    "src/UniversalMonitorAvatar/Assets/Assets 1/Sprüche/Fallback.json"
   ],
   "failedStep": "",
-  "message": "Fitnessstudio-Asset-Set erfolgreich erzeugt, geprüft, auf main veröffentlicht und direkt von GitHub verifiziert."
+  "message": "Fitnessstudio-Asset-Set erfolgreich unter src/UniversalMonitorAvatar/Assets/Assets 1 veröffentlicht und auf main verifiziert."
 }
