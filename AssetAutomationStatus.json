@@ -1,17 +1,10 @@
 {
-  "runAt": "2026-08-30T14:58:52+02:00",
-  "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 1",
+  "runAt": "2026-08-30T14:49:00+02:00",
+  "targetSet": "src/UniversalMonitorAvatar/Assets",
   "theme": "Fitnessstudio",
-  "success": true,
-  "committedSha": "a6b1c456af6648b9e61c0b1c90db64efa3061ef4",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 1/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 1/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 1/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 1/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 1/Sprüche/Abschiedsspruch.json",
-    "src/UniversalMonitorAvatar/Assets/Assets 1/Sprüche/Fallback.json"
-  ],
-  "failedStep": "",
-  "message": "Fitnessstudio-Asset-Set erfolgreich unter src/UniversalMonitorAvatar/Assets/Assets 1 veröffentlicht und auf main verifiziert."
+  "success": false,
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "pending-final-commit",
+  "message": "Finaler atomarer Commit und Rückprüfung stehen unmittelbar bevor."
 }
