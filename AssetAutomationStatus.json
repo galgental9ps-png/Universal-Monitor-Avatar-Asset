@@ -1,1 +1,16 @@
-{"runAt":"2026-08-30T13:39:00+02:00","targetSet":"Assets","theme":"Fitnessstudio","success":false,"committedSha":"","verifiedPaths":[],"failedStep":"upload-pending","message":"Fitnessstudio-Asset-Set erzeugt und technisch geprüft; atomarer GitHub-Upload läuft."}
+{
+  "targetSet": "src/UniversalMonitorAvatar/Assets",
+  "theme": "Fitnessstudio",
+  "success": true,
+  "committedSha": "workflow-commit",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Sprüche/Abschiedsspruch.json",
+    "src/UniversalMonitorAvatar/Assets/Sprüche/Fallback.json"
+  ],
+  "failedStep": "",
+  "message": "Fitnessstudio-Asset-Set erzeugt und unter src/UniversalMonitorAvatar/Assets validiert."
+}
