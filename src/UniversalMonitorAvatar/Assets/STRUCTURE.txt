@@ -1,1 +1,0 @@
-Die thematischen Sets liegen unter diesem Ordner als `Assets 1`, `Assets 2`, `Assets 3` usw. Jedes Set enthält Avatar, MonitorScene, Klingel und Sprüche.
