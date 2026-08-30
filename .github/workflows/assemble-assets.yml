@@ -3,7 +3,7 @@ name: Assemble Universal Asset Set
 on:
   push:
     paths:
-      - '.asset-upload/trigger.txt'
+      - '.asset-upload2/trigger.txt'
 
 permissions:
   contents: write
@@ -17,7 +17,7 @@ jobs:
           fetch-depth: 0
       - name: Install image support
         run: python3 -m pip install --quiet pillow
-      - name: Assemble, upscale and validate assets
+      - name: Assemble and validate UniversalMonitorAvatar assets
         shell: bash
         run: |
           python3 - <<'PY'
@@ -26,29 +26,31 @@ jobs:
           from PIL import Image
           import base64, json
 
-          root=Path('.')
-          base=root/'src'/'UniversalMonitorAvatar'/'Assets'
-          targets={
-              'idle':(base/'Avatar'/'Idle.png',(1024,1536)),
-              'actions':(base/'Avatar'/'Actions.png',(1536,1024)),
-              'scene':(base/'MonitorScene'/'MonitorScene.png',(1672,941)),
-              'bell':(base/'Klingel'/'MonitorBell.png',(1254,1254)),
+          root = Path('.')
+          staging = root / '.asset-upload2'
+          base = root / 'src' / 'UniversalMonitorAvatar' / 'Assets'
+          targets = {
+              'idle': (base/'Avatar'/'Idle.png', (1024,1536)),
+              'actions': (base/'Avatar'/'Actions.png', (1536,1024)),
+              'scene': (base/'MonitorScene'/'MonitorScene.png', (1672,941)),
+              'bell': (base/'Klingel'/'MonitorBell.png', (1254,1254)),
           }
           verified=[]
           for key,(dest,dims) in targets.items():
-              parts=sorted((root/'.asset-upload'/key).glob('part*.txt'))
+              parts=sorted((staging/key).glob('part*.txt'))
               if not parts:
                   raise SystemExit(f'Missing staging data for {key}')
-              raw=base64.b64decode(''.join(p.read_text(encoding='utf-8').strip() for p in parts),validate=True)
+              encoded=''.join(p.read_text(encoding='utf-8').strip() for p in parts)
+              raw=base64.b64decode(encoded,validate=True)
               image=Image.open(BytesIO(raw)).convert('RGBA')
               image=image.resize(dims,Image.Resampling.LANCZOS)
               dest.parent.mkdir(parents=True,exist_ok=True)
               image.save(dest,'PNG',optimize=True,compress_level=9)
               check=Image.open(dest).convert('RGBA')
-              if check.size!=dims:
+              if check.size != dims:
                   raise SystemExit(f'{key}: wrong dimensions {check.size} != {dims}')
               lo,hi=check.getchannel('A').getextrema()
-              if lo==255 or hi==0:
+              if lo == 255 or hi == 0:
                   raise SystemExit(f'{key}: transparency check failed')
               verified.append(str(dest).replace('\\','/'))
 
@@ -74,9 +76,14 @@ jobs:
           verified.append(str(fb).replace('\\','/'))
 
           status={
-              'runAt':'2026-08-30T13:39:00+02:00','targetSet':'src/UniversalMonitorAvatar/Assets','theme':'Fitnessstudio',
-              'success':True,'committedSha':'workflow-commit','verifiedPaths':verified,
-              'failedStep':'','message':'Fitnessstudio-Asset-Set erzeugt, geprüft und unter src/UniversalMonitorAvatar/Assets auf main veröffentlicht.'
+              'runAt':'2026-08-30T14:30:00+02:00',
+              'targetSet':'src/UniversalMonitorAvatar/Assets',
+              'theme':'Fitnessstudio',
+              'success':True,
+              'committedSha':'workflow-commit',
+              'verifiedPaths':verified,
+              'failedStep':'',
+              'message':'Fitnessstudio-Asset-Set erzeugt und unter src/UniversalMonitorAvatar/Assets validiert.'
           }
           (root/'AssetAutomationStatus.json').write_text(json.dumps(status,ensure_ascii=False,indent=2),encoding='utf-8')
           PY
@@ -85,7 +92,10 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git rm -rf .asset-upload
+          rm -f src/UniversalMonitorAvatar/Assets/Avatar/.gitkeep
+          rm -f src/UniversalMonitorAvatar/Assets/MonitorScene/.gitkeep
+          rm -f src/UniversalMonitorAvatar/Assets/Klingel/.gitkeep
+          git rm -rf .asset-upload2
           git add src/UniversalMonitorAvatar/Assets AssetAutomationStatus.json
           git commit -m 'src/UniversalMonitorAvatar/Assets: Fitnessstudio Universal Asset-Set'
           git push origin HEAD:main
