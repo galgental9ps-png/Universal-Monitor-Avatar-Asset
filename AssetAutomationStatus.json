@@ -1,16 +1,16 @@
 {
-  "runAt": "2026-08-30T18:38:41+02:00",
-  "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 1",
+  "runAt": "2026-08-30T18:43:37+02:00",
+  "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 2",
   "theme": "Hotel & Empfang",
   "success": true,
-  "committedSha": "0e8b0ecc4a0203163432b25eb5ed3d6accc0a33e",
+  "committedSha": "3a5959abcf08a62a5f6adfbeb45fc238bc88c1f5",
   "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 1/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 1/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 1/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 1/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 1/Sprüche/Abschiedsspruch.json"
+    "src/UniversalMonitorAvatar/Assets/Assets 2/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 2/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 2/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 2/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 2/Sprüche/Abschiedsspruch.json"
   ],
   "failedStep": "",
-  "message": "Hotel-&-Empfang-Set atomar veröffentlicht und alle fünf Pflichtpfade direkt auf GitHub main rückverifiziert."
+  "message": "Fitnessstudio als Assets 1 und Hotel & Empfang als Assets 2 strukturiert; alle elf Set-Dateien geprüft und sechs lose Altpfade entfernt."
 }
