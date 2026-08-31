@@ -1,16 +1,16 @@
 {
-  "runAt": "2026-08-30T18:43:37+02:00",
-  "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 2",
-  "theme": "Hotel & Empfang",
+  "runAt": "2026-08-31T08:56:09+02:00",
+  "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 4",
+  "theme": "Restaurant",
   "success": true,
-  "committedSha": "3a5959abcf08a62a5f6adfbeb45fc238bc88c1f5",
+  "committedSha": "90a83df4489ea492093667dfd38f69584ac30f44",
   "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 2/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 2/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 2/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 2/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 2/Sprüche/Abschiedsspruch.json"
+    "src/UniversalMonitorAvatar/Assets/Assets 4/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 4/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 4/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 4/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 4/Sprüche/Abschiedsspruch.json"
   ],
-  "failedStep": "",
-  "message": "Fitnessstudio als Assets 1 und Hotel & Empfang als Assets 2 strukturiert; alle elf Set-Dateien geprüft und sechs lose Altpfade entfernt."
+  "failedStep": null,
+  "message": "Assets 4 wurde atomar auf main veröffentlicht; alle fünf Zielpfade wurden anschließend direkt von main gelesen und verifiziert."
 }
