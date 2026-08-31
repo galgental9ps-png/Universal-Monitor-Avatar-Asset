@@ -1,16 +1,12 @@
 {
-  "runAt": "2026-08-31T08:56:09+02:00",
+  "runAt": "2026-08-31T10:01:50+02:00",
   "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 4",
   "theme": "Restaurant",
-  "success": true,
+  "success": false,
   "committedSha": "90a83df4489ea492093667dfd38f69584ac30f44",
   "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 4/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 4/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 4/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 4/Klingel/MonitorBell.png",
     "src/UniversalMonitorAvatar/Assets/Assets 4/Sprüche/Abschiedsspruch.json"
   ],
-  "failedStep": null,
-  "message": "Assets 4 wurde atomar auf main veröffentlicht; alle fünf Zielpfade wurden anschließend direkt von main gelesen und verifiziert."
+  "failedStep": "github-png-decode",
+  "message": "Nachträgliche strenge Binärprüfung fehlgeschlagen: Alle vier PNG-Dateien in Assets 4 sind beschädigt und mit Pillow nicht vollständig dekodierbar (bad header checksum in IDAT). Das Set darf von der App nicht geladen und nicht als erfolgreich behandelt werden."
 }
