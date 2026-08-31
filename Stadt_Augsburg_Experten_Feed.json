@@ -1,0 +1,1122 @@
+{
+  "schema": "universal-monitor-feed",
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-30T22:00:00+02:00",
+  "monitor": {
+    "title": "Stadt Augsburg Experte",
+    "subtitle": "Verwaltung und Angebote für Bürgerinnen und Bürger",
+    "homeTitle": "Wobei kann ich in Augsburg helfen?",
+    "homeMessage": "Wählen Sie ein Thema. Ich erkläre den schnellsten Weg zur passenden städtischen Leistung und verlinke die offizielle Seite.",
+    "sourceInfo": "Offizielle Informationen der Stadt Augsburg – geprüft am 30.08.2026",
+    "fullMonitorUrl": "https://www.augsburg.de/buergerservice-rathaus/buergerservice"
+  },
+  "topics": [
+    {
+      "id": "schnellstart",
+      "enabled": true,
+      "order": 10,
+      "label": "Schnellstart",
+      "icon": "🧭",
+      "accent": "#68BDF8",
+      "intro": "Die wichtigsten Einstiege in den Bürgerservice der Stadt Augsburg.",
+      "items": [
+        {
+          "id": "online-dienste",
+          "title": "Online-Dienste der Stadt",
+          "category": "Digitaler Bürgerservice",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Viele Anträge und Verwaltungsleistungen können direkt am PC oder Smartphone erledigt werden.",
+          "sections": [
+            {
+              "title": "Was Sie dort finden",
+              "type": "text",
+              "text": "Die Stadt bündelt ihre digitalen Verwaltungsleistungen nach Lebenslagen. Dazu gehören unter anderem Terminreservierung, Ausweis-Statusabfrage, Bewohnerparkausweis, Fahrzeug-Abmeldung, Urkundenbestellung und Hundesteuer-Anzeige.",
+              "items": []
+            },
+            {
+              "title": "So gehen Sie vor",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Online-Services öffnen.",
+                "Lebenslage oder gewünschte Leistung auswählen.",
+                "Hinweise und erforderliche Unterlagen auf der jeweiligen Leistungsseite prüfen."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Online-Dienste öffnen",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/smart-digital/online-services",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "online",
+            "antrag",
+            "bürgerservice"
+          ]
+        },
+        {
+          "id": "buergerbueros",
+          "title": "Bürgerbüros: fünf Standorte",
+          "category": "Bürgeramt",
+          "priority": "high",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Für persönliche Anliegen stehen Bürgerbüros in Stadtmitte, Haunstetten, Lechhausen, Kriegshaber und Hochzoll zur Verfügung.",
+          "sections": [
+            {
+              "title": "Typische Leistungen",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Wohnung an-, um- oder abmelden.",
+                "Personalausweis oder Reisepass beantragen.",
+                "Führungszeugnis, Meldebescheinigung oder Bewohnerparkausweis beantragen.",
+                "Kfz-Angelegenheiten erledigen."
+              ]
+            },
+            {
+              "title": "Kontakt",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Termin möglichst vorab online reservieren.",
+                "Service-Telefon Bürgerbüro: 0821 324-9999.",
+                "Für das konkrete Anliegen die Hinweise der Leistungsseite beachten."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Bürgerbüros und Termine",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/buergerbueros",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "termin",
+            "bürgerbüro",
+            "kontakt"
+          ]
+        },
+        {
+          "id": "dienste-a-z",
+          "title": "Die richtige Leistung finden",
+          "category": "Verwaltungswegweiser",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Der Bereich „Dienste A–Z“ hilft, eine städtische Leistung und die zuständige Stelle gezielt zu finden.",
+          "sections": [
+            {
+              "title": "Tipp",
+              "type": "text",
+              "text": "Suchen Sie zuerst nach dem Anliegen, nicht nach einem vermuteten Amt. Auf der Leistungsseite stehen Zuständigkeit, Kontakt, Voraussetzungen, Unterlagen, Kosten und Formulare.",
+              "items": []
+            },
+            {
+              "title": "Allgemeiner Kontakt",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Telefonvermittlung der Stadt: 0821 324-0.",
+                "Bürgerinformation: Rathausplatz 1, 86150 Augsburg.",
+                "E-Mail: augsburg@augsburg.de."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Dienste A–Z",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/dienste-a-z",
+              "role": "primary"
+            },
+            {
+              "label": "Bürgerservice-Übersicht",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/buergerservice",
+              "role": "secondary"
+            }
+          ],
+          "tags": [
+            "zuständigkeit",
+            "amt",
+            "wegweiser"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ausweis-wohnsitz",
+      "enabled": true,
+      "order": 20,
+      "label": "Ausweis & Wohnen",
+      "icon": "🪪",
+      "accent": "#83E3B2",
+      "intro": "Ausweisdokumente, Anmeldung und Ummeldung des Wohnsitzes.",
+      "items": [
+        {
+          "id": "personalausweis-reisepass",
+          "title": "Personalausweis und Reisepass",
+          "category": "Ausweise und Dokumente",
+          "priority": "high",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Personalausweis und Reisepass werden in den Augsburger Bürgerbüros beantragt; für den Besuch sollte ein Termin reserviert werden.",
+          "sections": [
+            {
+              "title": "Vor dem Termin",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Passendes Bürgerbüro und Termin auswählen.",
+                "Erforderliche Unterlagen und aktuelle Gebühren auf der offiziellen Seite prüfen.",
+                "Seit Mai 2025 werden für Ausweise und Pässe digitale biometrische Lichtbilder verwendet."
+              ]
+            },
+            {
+              "title": "Kontakt Bürgerbüro",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Telefon: 0821 324-9999.",
+                "E-Mail: einwohnerwesen@augsburg.de.",
+                "Den Bearbeitungsstand können Sie über den städtischen Online-Service prüfen."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Pass- und Ausweiswesen",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/aemter-behoerden/staedtische-dienststellen/b/buergeramt/buergerbueros/pass-und-ausweiswesen",
+              "role": "action"
+            },
+            {
+              "label": "Online-Dienste",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/smart-digital/online-services",
+              "role": "secondary"
+            }
+          ],
+          "tags": [
+            "personalausweis",
+            "reisepass",
+            "termin"
+          ]
+        },
+        {
+          "id": "wohnsitz-online",
+          "title": "Wohnsitz online an- oder ummelden",
+          "category": "Meldewesen",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Die Anmeldung oder Ummeldung des Wohnsitzes kann online erfolgen; benötigt werden ein Nutzerkonto und die Online-Ausweisfunktion.",
+          "sections": [
+            {
+              "title": "Voraussetzungen für den Online-Weg",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Nutzerkonto beziehungsweise BundID bereithalten.",
+                "Online-Ausweisfunktion mit PIN nutzen.",
+                "Wohnungsgeberbestätigung und weitere geforderte Angaben bereithalten."
+              ]
+            },
+            {
+              "title": "Alternativ",
+              "type": "text",
+              "text": "Wer den Online-Dienst nicht nutzen kann, findet auf der städtischen Leistungsseite die Möglichkeiten über die Bürgerbüros.",
+              "items": []
+            }
+          ],
+          "links": [
+            {
+              "label": "Elektronische Wohnsitzanmeldung",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/dienste-a-z/aemterweise/leistungen-buergeramt-einwohnerwesen/elektronische-wohnsitzanmeldung",
+              "role": "action"
+            },
+            {
+              "label": "Wohnung anmelden",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/dienste-a-z/aemterweise/leistungen-buergeramt-einwohnerwesen/anmeldung-der-wohnung",
+              "role": "secondary"
+            }
+          ],
+          "tags": [
+            "wohnsitz",
+            "anmeldung",
+            "umzug"
+          ]
+        },
+        {
+          "id": "dokumentenbox",
+          "title": "Ausweis oder Pass rund um die Uhr abholen",
+          "category": "Dokumentenausgabe",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Nach Beantragung im Bürgerbüro Stadtmitte kann die Dokumentenausgabebox für eine Abholung außerhalb der Öffnungszeiten gewählt werden.",
+          "sections": [
+            {
+              "title": "Wichtig",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Die Ausgabebox bei der Beantragung im Bürgerbüro Stadtmitte auswählen.",
+                "Die Abholung ist anschließend ohne neuen Termin möglich.",
+                "Die Hinweise und Benachrichtigung zur Abholung beachten."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Informationen der Bürgerbüros",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/buergerbueros",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "abholung",
+            "ausweis",
+            "24/7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "familie-bildung",
+      "enabled": true,
+      "order": 30,
+      "label": "Familie & Bildung",
+      "icon": "👨‍👩‍👧",
+      "accent": "#FFC75E",
+      "intro": "Betreuung, Schule, Bildung und Angebote für Familien.",
+      "items": [
+        {
+          "id": "kita-portal",
+          "title": "Ganztags- und Kita-Portal",
+          "category": "Kinderbetreuung",
+          "priority": "high",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Das zentrale Portal informiert über Betreuungsplätze und ermöglicht die Vormerkung für Kita, Krippe, Kindergarten, Hort, Kindertagespflege und Ganztagsbetreuung.",
+          "sections": [
+            {
+              "title": "So nutzen Familien das Portal",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Betreuungsform und Einrichtungen suchen.",
+                "Kind online für gewünschte Angebote vormerken.",
+                "Fristen und Rückmeldetermine für das jeweilige Betreuungsjahr beachten."
+              ]
+            },
+            {
+              "title": "Bitte beachten",
+              "type": "text",
+              "text": "Eine Vormerkung ist noch keine Platzzusage. Die Stadt empfiehlt, die Angaben und Alternativen sorgfältig zu prüfen.",
+              "items": []
+            }
+          ],
+          "links": [
+            {
+              "label": "Ganztags- und Kita-Portal",
+              "url": "https://www.augsburg.de/umwelt-soziales/kindertagesbetreuung-in-augsburg/kita-portal",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "kita",
+            "ganztag",
+            "familie"
+          ]
+        },
+        {
+          "id": "bildung-uebersicht",
+          "title": "Bildung in Augsburg",
+          "category": "Bildungswegweiser",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Die Bildungsseiten geben einen Überblick von Kindertagesbetreuung und Schulen bis zu Erwachsenenbildung und städtischen Bildungsangeboten.",
+          "sections": [
+            {
+              "title": "Dort finden Sie",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Schulen und Schulmap.",
+                "Kindertagesbetreuung.",
+                "Stadtbücherei und weitere Lernorte.",
+                "Projekte und Angebote verschiedener Bildungsträger."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Bildungsangebote öffnen",
+              "url": "https://www.augsburg.de/bildung-wirtschaft/bildung",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "schule",
+            "bildung",
+            "lernen"
+          ]
+        },
+        {
+          "id": "familienangebote",
+          "title": "Angebote für Familien",
+          "category": "Familienservice",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Die Stadt bündelt Beratung und Angebote rund um Schwangerschaft, Kinder, Jugendliche, Betreuung, Ferien und Familienleistungen.",
+          "sections": [
+            {
+              "title": "Themenbereiche",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Schwangerschaftsberatung.",
+                "Kinder und Jugendliche.",
+                "Kindertagesbetreuung.",
+                "Ferienprogramm Tschamp.",
+                "Netzwerk Familienleistungen und Jugendbeteiligung."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Familien-Themen",
+              "url": "https://www.augsburg.de/umwelt-soziales/familie",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "familie",
+            "beratung",
+            "kinder"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soziales-pflege",
+      "enabled": true,
+      "order": 40,
+      "label": "Soziales & Pflege",
+      "icon": "🤝",
+      "accent": "#B99BFF",
+      "intro": "Finanzielle Unterstützung, Wohnen, Pflege und Hilfe im Alltag.",
+      "items": [
+        {
+          "id": "wohngeld-plus",
+          "title": "Wohngeld Plus",
+          "category": "Finanzielle Unterstützung",
+          "priority": "high",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Wohngeld unterstützt Haushalte mit geringem Einkommen bei ihren Wohnkosten. Ob ein Anspruch besteht, hängt von der individuellen Situation ab.",
+          "sections": [
+            {
+              "title": "Vor dem Antrag",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Voraussetzungen und aktuelle Einkommenshinweise prüfen.",
+                "Haushaltsmitglieder, Einkommen und Wohnkosten vollständig angeben.",
+                "Erforderliche Nachweise bereithalten."
+              ]
+            },
+            {
+              "title": "Wichtig",
+              "type": "text",
+              "text": "Die Tabellen der Stadt dienen nur als grober Anhaltspunkt. Eine verbindliche Entscheidung erfolgt erst nach Prüfung des Antrags.",
+              "items": []
+            }
+          ],
+          "links": [
+            {
+              "label": "Wohngeld Plus",
+              "url": "https://www.augsburg.de/umwelt-soziales/soziales/wohngeld-plus",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "wohngeld",
+            "miete",
+            "unterstützung"
+          ]
+        },
+        {
+          "id": "wohnbuero",
+          "title": "Hilfe bei Wohnungssuche und Wohnproblemen",
+          "category": "Wohnberatung",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Das Wohnbüro berät bei erfolgloser Wohnungssuche, Wohnproblemen und zu Unterstützungsmöglichkeiten.",
+          "sections": [
+            {
+              "title": "Mögliche Hilfe",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Orientierung bei der Wohnungssuche.",
+                "Informationen zu Anlaufstellen und Hilfsangeboten.",
+                "Unterstützung im Umgang mit Behörden und möglichen Umzugshilfen nach erfolgreicher Wohnungssuche."
+              ]
+            },
+            {
+              "title": "Kontaktweg",
+              "type": "text",
+              "text": "Die Beratung findet grundsätzlich telefonisch statt; persönliche Vorsprachen werden nur in Ausnahmefällen vereinbart.",
+              "items": []
+            }
+          ],
+          "links": [
+            {
+              "label": "Wohnbüro Augsburg",
+              "url": "https://www.augsburg.de/umwelt-soziales/soziales/wohnbuero",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "wohnung",
+            "beratung",
+            "notlage"
+          ]
+        },
+        {
+          "id": "pflege-senioren",
+          "title": "Pflege und Angebote für Senioren",
+          "category": "Beratung und Teilhabe",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Die Stadt bietet neutrale Beratung für Pflegebedürftige, Angehörige und ältere Menschen sowie Informationen zu Hilfen, Wohnen und Teilhabe.",
+          "sections": [
+            {
+              "title": "Anlaufstellen",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Pflegestützpunkt für Fragen rund um Pflege.",
+                "Seniorenfachberatungen und soziale Dienste.",
+                "Informationen zu Unterstützung zu Hause sowie Wohnen und Pflege.",
+                "Seniorenbeirat für Anliegen und Beteiligung."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Soziale Beratung und Pflegestützpunkt",
+              "url": "https://www.augsburg.de/umwelt-soziales/soziales",
+              "role": "action"
+            },
+            {
+              "label": "Senioren in Augsburg",
+              "url": "https://www.augsburg.de/umwelt-soziales/soziales/senioren",
+              "role": "secondary"
+            }
+          ],
+          "tags": [
+            "pflege",
+            "senioren",
+            "beratung"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verkehr-parken",
+      "enabled": true,
+      "order": 50,
+      "label": "Verkehr & Parken",
+      "icon": "🚗",
+      "accent": "#65D6A7",
+      "intro": "Bewohnerparken, Parkregeln und wichtige Mobilitätsinformationen.",
+      "items": [
+        {
+          "id": "bewohnerparkausweis",
+          "title": "Bewohnerparkausweis",
+          "category": "Parken",
+          "priority": "high",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Ein Bewohnerparkausweis kann online oder persönlich im Bürgerbüro beantragt, verlängert oder geändert werden.",
+          "sections": [
+            {
+              "title": "Vor dem Antrag",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Prüfen, ob der Hauptwohnsitz in einer Bewohnerparkzone liegt.",
+                "Fahrzeug- und Halterdaten bereithalten.",
+                "Aktuelle Nachweise, Gebühren und Gültigkeit auf der offiziellen Seite prüfen."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Bewohnerparkausweis beantragen",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/dienste-a-z/aemterweise/leistungen-buergeramt-kfz-wesen/kfz-bewohnerparkausweis",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "parken",
+            "bewohner",
+            "online-antrag"
+          ]
+        },
+        {
+          "id": "parken-augsburg",
+          "title": "Parken, Zonen und Gebühren",
+          "category": "Mobilität",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Die Stadt informiert über Parkzonen, Gebühren, Bezahlmöglichkeiten, Bewohnerparken und besondere Regelungen.",
+          "sections": [
+            {
+              "title": "Vor der Fahrt prüfen",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Geltende Parkzone und Höchstparkdauer.",
+                "Aktuelle Gebühren und Bezahlmöglichkeiten.",
+                "Veranstaltungsbedingte Einschränkungen, besonders am Plärrergelände."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Parken in Augsburg",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/verkehr/parken",
+              "role": "action"
+            },
+            {
+              "label": "Gebühren und Bezahlung",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/verkehr/parken-neu/parkgebuehren-und-bezahlmoeglichkeiten",
+              "role": "secondary"
+            }
+          ],
+          "tags": [
+            "parkzone",
+            "gebühren",
+            "mobilität"
+          ]
+        },
+        {
+          "id": "parkerleichterung",
+          "title": "Parkerleichterungen für Menschen mit Behinderung",
+          "category": "Barrierefreie Mobilität",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Für berechtigte Personen können Parkerleichterungen beantragt werden; die Stadt stellt Informationen und einen digitalen Antrag bereit.",
+          "sections": [
+            {
+              "title": "So gehen Sie vor",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Voraussetzungen für den gewünschten Parkausweis prüfen.",
+                "Antrag online oder nach Termin bei der zuständigen Stelle einreichen.",
+                "Notwendige Nachweise vollständig beifügen."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Parkerleichterungen",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/verkehr/parken-neu/parkerleichterungen",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "behinderung",
+            "parkausweis",
+            "barrierefrei"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abfall-umwelt",
+      "enabled": true,
+      "order": 60,
+      "label": "Abfall & Umwelt",
+      "icon": "♻️",
+      "accent": "#71D97B",
+      "intro": "Abfalltrennung, Wertstoffhöfe und fachgerechte Entsorgung.",
+      "items": [
+        {
+          "id": "vier-tonnen-system",
+          "title": "Abfalltrennung in Augsburg",
+          "category": "Abfallentsorgung",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Augsburg nutzt ein Vier-Tonnen-Holsystem für Bioabfälle, Papier und Pappe, Kunststoffe und Metalle sowie Restmüll.",
+          "sections": [
+            {
+              "title": "Zusätzliche Möglichkeiten",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Sperrmüllabholung nutzen oder Sperrmüll selbst abgeben.",
+                "Wertstoffe zu den Wertstoff- und Servicepunkten bringen.",
+                "Elektroaltgeräte nicht über den Restmüll entsorgen."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Abfallentsorgung",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/dienste-a-z/aemterweise/leistungen-abfallwirtschafts-und-stadtreinigungsbetrieb-der-stadt-augsburg/abfallentsorgung",
+              "role": "action"
+            },
+            {
+              "label": "Vier-Tonnen-System",
+              "url": "https://aws.augsburg.de/abfallentsorgung-wertstoffsammlung/vier-tonnen-holsystem/uebersicht-tipps",
+              "role": "secondary"
+            }
+          ],
+          "tags": [
+            "abfall",
+            "tonnen",
+            "trennung"
+          ]
+        },
+        {
+          "id": "wertstoffpunkte",
+          "title": "Wertstoff- und Servicepunkte",
+          "category": "Recycling",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Wertstoffe und Grüngut können an den Augsburger Wertstoff- und Servicepunkten abgegeben werden.",
+          "sections": [
+            {
+              "title": "Bitte mitbringen",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Geeigneten Nachweis, dass Abfallwirtschaftsgebühren entrichtet werden.",
+                "Zum Beispiel Personalausweis, Gebührenbescheid oder Nebenkostenabrechnung.",
+                "Vor der Fahrt Annahmebedingungen und Öffnungszeiten des Standorts prüfen."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Wertstoff- und Servicepunkte",
+              "url": "https://aws.augsburg.de/abfallentsorgung-wertstoffsammlung/wertstoff-servicepunkte/uebersicht",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "wertstoffhof",
+            "recycling",
+            "grüngut"
+          ]
+        },
+        {
+          "id": "elektro-batterien",
+          "title": "Elektrogeräte, Batterien und Akkus",
+          "category": "Sonderentsorgung",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Elektroaltgeräte, Batterien und Akkus gehören nicht in den Hausmüll und können fachgerecht abgegeben werden.",
+          "sections": [
+            {
+              "title": "Richtiger Weg",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Elektroaltgeräte zu einem Wertstoff- und Servicepunkt bringen oder die angebotene Sperrmüllabholung prüfen.",
+                "Batterien und Akkus kostenfrei an Wertstoffpunkten oder im Handel abgeben.",
+                "Beschädigte Akkus besonders vorsichtig behandeln und Hinweise des AWS beachten."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Elektroaltgeräte entsorgen",
+              "url": "https://www.augsburg.de/umwelt-soziales/umwelt/abfallrecht/elektroaltgeraete",
+              "role": "action"
+            },
+            {
+              "label": "AWS-Informationen",
+              "url": "https://aws.augsburg.de/",
+              "role": "secondary"
+            }
+          ],
+          "tags": [
+            "elektro",
+            "batterien",
+            "recycling"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "standesamt",
+      "enabled": true,
+      "order": 70,
+      "label": "Standesamt",
+      "icon": "💍",
+      "accent": "#FF9EB5",
+      "intro": "Urkunden, Geburt, Eheschließung und weitere Personenstandsangelegenheiten.",
+      "items": [
+        {
+          "id": "personenstandsurkunden",
+          "title": "Geburts-, Ehe- und Sterbeurkunden bestellen",
+          "category": "Urkunden",
+          "priority": "high",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Personenstandsurkunden für in Augsburg beurkundete Ereignisse können beim Standesamt bestellt werden; für viele Fälle gibt es Online-Formulare.",
+          "sections": [
+            {
+              "title": "Mögliche Urkunden",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Geburtsurkunde.",
+                "Eheurkunde.",
+                "Lebenspartnerschaftsurkunde.",
+                "Sterbeurkunde oder beglaubigte Registerabschrift."
+              ]
+            },
+            {
+              "title": "Tipp",
+              "type": "text",
+              "text": "Prüfen Sie vor der Bestellung, ob das Ereignis in Augsburg oder einem erfassten eingemeindeten Ort beurkundet wurde und ob das Register noch beim Standesamt liegt.",
+              "items": []
+            }
+          ],
+          "links": [
+            {
+              "label": "Urkundenbestellung",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/dienste-a-z/aemterweise/leistungen-standesamt/formulare-standesamt/urkundenbestellung-beim-standesamt-augsburg",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "urkunde",
+            "geburt",
+            "ehe"
+          ]
+        },
+        {
+          "id": "heiraten",
+          "title": "Eheschließung in Augsburg",
+          "category": "Heirat",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Für Anmeldung, Unterlagen und Terminfragen zur Eheschließung ist das Standesamt Augsburg zuständig.",
+          "sections": [
+            {
+              "title": "Vorbereitung",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Zuständigkeit des Standesamts prüfen.",
+                "Benötigte Unterlagen über das Kontaktformular klären.",
+                "Termin erst planen, wenn die erforderlichen Unterlagen vollständig sind."
+              ]
+            },
+            {
+              "title": "Kontakt",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Standesamt: Maximilianstraße 69, 86150 Augsburg.",
+                "Allgemeine Telefonnummer: 0821 324-3851.",
+                "Persönliche Vorsprache nur nach Terminvereinbarung."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Standesamt Augsburg",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/aemter-behoerden/staedtische-dienststellen/s/standesamt",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "heirat",
+            "standesamt",
+            "termin"
+          ]
+        },
+        {
+          "id": "standesamt-formulare",
+          "title": "Formulare des Standesamts",
+          "category": "Online-Service",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Die Formularübersicht führt zu Anträgen und Kontaktmöglichkeiten für Urkunden und weitere Personenstandsangelegenheiten.",
+          "sections": [
+            {
+              "title": "Beispiele",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Geburts-, Ehe- und Sterbeurkunden.",
+                "Sterbefall anzeigen und beurkunden.",
+                "Kontaktformulare für besondere Anliegen.",
+                "Nachträgliche Beurkundungen bei Auslandsbezug."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Standesamt-Formulare",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/buergerservice/dienste-a-z/aemterweise/leistungen-standesamt/formulare-standesamt",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "formulare",
+            "personenstand",
+            "online"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rathaus-sicherheit",
+      "enabled": true,
+      "order": 80,
+      "label": "Rathaus & Sicherheit",
+      "icon": "🏛️",
+      "accent": "#FF8B8B",
+      "intro": "Wie die Stadtverwaltung arbeitet, wie Entscheidungen entstehen und was im Notfall gilt.",
+      "items": [
+        {
+          "id": "notfallnummern",
+          "title": "Wichtige Rufnummern im Notfall",
+          "category": "Sicherheit",
+          "priority": "critical",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Bei akuter Gefahr gelten die bekannten Notrufnummern; die Stadt informiert zusätzlich über Warnwege und Verhalten in besonderen Lagen.",
+          "sections": [
+            {
+              "title": "Rufnummern",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Feuerwehr und Rettungsdienst: 112.",
+                "Polizei: 110.",
+                "Ärztlicher Bereitschaftsdienst: 116117.",
+                "Giftnotrufzentrale: 089 19240.",
+                "Bürgertelefon der Stadt bei besonderen Ereignissen: 0821 324-4444."
+              ]
+            },
+            {
+              "title": "Bei größeren Gefahrenlagen",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Warn-App NINA und Cell Broadcast beachten.",
+                "Anweisungen der Einsatzkräfte folgen.",
+                "Nachbarn und hilfsbedürftige Personen unterstützen, ohne sich selbst zu gefährden."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Warnungen und Hinweise der Feuerwehr",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/berufsfeuerwehr/warnung",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "notruf",
+            "warnung",
+            "sicherheit"
+          ]
+        },
+        {
+          "id": "stadtverwaltung-organisation",
+          "title": "So ist die Stadtverwaltung aufgebaut",
+          "category": "Öffentliche Verwaltung",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Die Stadtverwaltung ist in Referate, Ämter und Dienststellen gegliedert. Referentinnen und Referenten leiten jeweils ein Referat.",
+          "sections": [
+            {
+              "title": "Orientierung",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Die Organisation der Stadt zeigt Aufbau und Zuständigkeiten.",
+                "Ämter setzen gesetzliche Aufgaben und Beschlüsse um.",
+                "Für ein konkretes Bürgeranliegen ist die jeweilige Leistungsseite wichtiger als das Organigramm."
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Organisation der Stadt Augsburg",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/stadtrat-und-verwaltung/organisation-der-stadt-augsburg",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "verwaltung",
+            "referate",
+            "ämter"
+          ]
+        },
+        {
+          "id": "stadtrat-ris",
+          "title": "Stadtrat und Ratsinformationssystem",
+          "category": "Kommunalpolitik",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Im Ratsinformationssystem stehen Sitzungskalender, Tagesordnungen, Beschlussvorlagen, Beschlüsse und Abstimmungsergebnisse.",
+          "sections": [
+            {
+              "title": "Was Bürger dort nachvollziehen können",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Wann Stadtrat und Ausschüsse tagen.",
+                "Welche Themen beraten werden.",
+                "Welche Vorlagen und Beschlüsse öffentlich verfügbar sind.",
+                "Welche Ergebnisse und Abstimmungen dokumentiert wurden."
+              ]
+            },
+            {
+              "title": "Zusätzlich",
+              "type": "text",
+              "text": "Stadtratssitzungen werden live übertragen; Aufzeichnungen stehen zeitweise in der Mediathek bereit.",
+              "items": []
+            }
+          ],
+          "links": [
+            {
+              "label": "Stadtrat und Verwaltung",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/stadtrat-und-verwaltung",
+              "role": "action"
+            },
+            {
+              "label": "Öffentlichkeitsbeteiligung",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/oeffentlichkeitsbeteiligung",
+              "role": "secondary"
+            }
+          ],
+          "tags": [
+            "stadtrat",
+            "ris",
+            "beteiligung"
+          ]
+        },
+        {
+          "id": "stadtrecht",
+          "title": "Satzungen und Verordnungen der Stadt",
+          "category": "Kommunalrecht",
+          "priority": "normal",
+          "status": "active",
+          "publishedAt": "2026-08-30T22:00:00+02:00",
+          "validFrom": "",
+          "validUntil": "",
+          "summary": "Das Augsburger Stadtrecht enthält die von der Stadt erlassenen Satzungen, Verordnungen und weitere kommunale Rechtsgrundlagen.",
+          "sections": [
+            {
+              "title": "So nutzen Sie die Sammlung",
+              "type": "bullets",
+              "text": "",
+              "items": [
+                "Nach Stichwort oder Thema suchen.",
+                "Aktuelle Fassung und Anlagen vollständig öffnen.",
+                "Bei laufenden Änderungen zusätzlich amtliche Bekanntmachungen prüfen."
+              ]
+            },
+            {
+              "title": "Hinweis",
+              "type": "text",
+              "text": "Die kurze Erklärung im Monitor dient der Orientierung. Maßgeblich ist immer die offiziell veröffentlichte Rechtsgrundlage.",
+              "items": []
+            }
+          ],
+          "links": [
+            {
+              "label": "Stadtrecht Augsburg",
+              "url": "https://www.augsburg.de/buergerservice-rathaus/rathaus/stadtrecht",
+              "role": "action"
+            }
+          ],
+          "tags": [
+            "stadtrecht",
+            "satzung",
+            "verordnung"
+          ]
+        }
+      ]
+    }
+  ]
+}
