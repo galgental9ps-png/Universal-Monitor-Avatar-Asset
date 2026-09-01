@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-09-01T08:54:55+02:00",
+  "runAt": "2026-09-01T20:44:10.482Z",
   "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 5",
   "theme": "Bibliothek",
   "success": true,
-  "committedSha": "1bf3f7c5d020c994526ac5036e08afc929f5ff8d",
+  "committedSha": "aaef64ae598eb9b1df4123cccec28b9cdd9bd0d5",
   "verifiedPaths": [
     "src/UniversalMonitorAvatar/Assets/Assets 5/Avatar/Idle.png",
     "src/UniversalMonitorAvatar/Assets/Assets 5/Avatar/Actions.png",
@@ -12,7 +12,7 @@
     "src/UniversalMonitorAvatar/Assets/Assets 5/Sprüche/Abschiedsspruch.json"
   ],
   "failedStep": null,
-  "message": "Assets 5 atomar veröffentlicht. Alle fünf Dateien danach direkt von main binär geladen, SHA-256 mit lokalen geprüften Dateien identisch. PNG load/verify ohne CRC/IDAT/Truncation-Fehler; exakte Maße und Transparenz. Acht 384x512-Zellen erneut ausgeschnitten, Alpha-Bounding-Boxes geprüft und Kontaktbogen visuell geprüft. Mindestens 58 Pixel echter transparenter Rand; beide Gehframes nach rechts und gemeinsame Bodenlinie. Assets 1–4 unverändert.",
+  "message": "Bestehendes Assets 5 auf Nutzerwunsch korrigiert: Originalfiguren in Actions.png um ca. 51%, in Idle.png um 13% vergrößert und zentriert. Exakte PNG-Maße und echte RGBA-Transparenz. Acht 384x512-Zellen mit mindestens 48 transparenten Pixeln Rand; gemeinsame Geh-Bodenlinie 459. Alle fünf Dateien von origin/main erneut binär gelesen und mit lokalen Dateien verglichen. Assets 1–4, Szene, Klingel und Spruch unverändert.",
   "validation": {
     "referenceSets": [
       1,
@@ -21,8 +21,8 @@
     ],
     "visualReferenceImagesReviewed": 6,
     "sha256": {
-      "Avatar/Actions.png": "2a544a1f2f2d622ede11bd1c749eef42fb3ce88ae854ba50e3616975c5df09a0",
-      "Avatar/Idle.png": "f8f88e7c5ceb5b918fe8044ee8a141691eedc86aa60a7941d5511041df6bddc1",
+      "Avatar/Actions.png": "4f0a89d3cbc521d253d0a112c1651283b207f1cf1e2913d175c93cb9844f11fc",
+      "Avatar/Idle.png": "aefc83762466dcf8a3b206a8223854f58fcf047bc627c8c24e08030d3742df1c",
       "Klingel/MonitorBell.png": "f1f6692b7aec5558c7b8e95a048c1ec5c20c652933077bd44c20b11737b07520",
       "MonitorScene/MonitorScene.png": "ad32a00e2001a5cb49ca1c5c734099774e6b1a65d479705f38b0a9a56ac05230",
       "Sprüche/Abschiedsspruch.json": "08fa93c4b116605ac700b94ba38758abe2e5caecd8ca45c628a665671ce8c6a8"
@@ -31,179 +31,189 @@
       {
         "frame": 1,
         "bbox": [
-          75,
-          91,
-          326,
-          418
+          120,
+          48,
+          264,
+          464
         ],
         "marginsLTRB": [
-          75,
-          58,
-          91,
-          94
+          120,
+          120,
+          48,
+          48
         ],
         "requiredMarginsLTRB": [
           48,
           48,
           48,
           48
-        ]
+        ],
+        "heightIncreasePercent": 50.6
       },
       {
         "frame": 2,
         "bbox": [
-          63,
-          124,
-          316,
-          419
+          93,
+          79,
+          290,
+          464
         ],
         "marginsLTRB": [
-          63,
-          68,
-          124,
-          93
+          93,
+          94,
+          79,
+          48
         ],
         "requiredMarginsLTRB": [
           48,
           48,
           48,
           48
-        ]
+        ],
+        "heightIncreasePercent": 51.2
       },
       {
         "frame": 3,
         "bbox": [
-          68,
-          115,
-          326,
-          417
+          94,
+          81,
+          289,
+          463
         ],
         "marginsLTRB": [
-          68,
-          58,
-          115,
-          95
+          94,
+          95,
+          81,
+          49
         ],
         "requiredMarginsLTRB": [
           48,
           48,
           48,
           48
-        ]
+        ],
+        "heightIncreasePercent": 50.4
       },
       {
         "frame": 4,
         "bbox": [
-          59,
-          119,
-          308,
-          391
+          65,
+          145,
+          318,
+          463
         ],
         "marginsLTRB": [
-          59,
-          76,
-          119,
-          121
+          65,
+          66,
+          145,
+          49
         ],
         "requiredMarginsLTRB": [
           48,
           48,
           48,
           48
-        ]
+        ],
+        "heightIncreasePercent": 50.7
       },
       {
         "frame": 5,
         "bbox": [
-          88,
-          108,
-          322,
-          372
+          100,
+          60,
+          284,
+          349
         ],
         "marginsLTRB": [
-          88,
-          62,
-          108,
-          140
+          100,
+          100,
+          60,
+          163
         ],
         "requiredMarginsLTRB": [
           48,
           48,
           48,
           48
-        ]
+        ],
+        "heightIncreasePercent": 50.8
       },
       {
         "frame": 6,
         "bbox": [
-          85,
-          160,
-          270,
-          377
+          87,
+          235,
+          296,
+          463
         ],
         "marginsLTRB": [
-          85,
-          114,
-          160,
-          135
+          87,
+          88,
+          235,
+          49
         ],
         "requiredMarginsLTRB": [
           48,
           48,
           48,
           48
-        ]
+        ],
+        "heightIncreasePercent": 51
       },
       {
         "frame": 7,
         "bbox": [
-          88,
-          93,
-          312,
-          398
+          84,
+          79,
+          299,
+          464
         ],
         "marginsLTRB": [
-          88,
-          72,
-          93,
-          114
-        ],
-        "requiredMarginsLTRB": [
-          48,
-          48,
-          48,
-          68
-        ]
-      },
-      {
-        "frame": 8,
-        "bbox": [
+          84,
           85,
-          103,
-          279,
-          356
-        ],
-        "marginsLTRB": [
-          85,
-          105,
-          103,
-          156
+          79,
+          48
         ],
         "requiredMarginsLTRB": [
           48,
           48,
           48,
           48
-        ]
+        ],
+        "heightIncreasePercent": 50.6
+      },
+      {
+        "frame": 8,
+        "bbox": [
+          118,
+          82,
+          266,
+          464
+        ],
+        "marginsLTRB": [
+          118,
+          118,
+          82,
+          48
+        ],
+        "requiredMarginsLTRB": [
+          48,
+          48,
+          48,
+          48
+        ],
+        "heightIncreasePercent": 50.2
       }
     ],
-    "walkGroundLine": 414,
+    "walkGroundLine": 459,
     "idleMarginsLTRB": [
-      109,
-      191,
-      143,
-      113
+      290,
+      290,
+      79,
+      79
     ],
-    "contactSheetReviewed": true
+    "contactSheetReviewed": false,
+    "idleHeightIncreasePercent": 13.1,
+    "finalSpriteSheetVisuallyReviewed": true
   }
 }
