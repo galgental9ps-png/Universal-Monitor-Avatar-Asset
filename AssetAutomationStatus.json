@@ -1,16 +1,209 @@
 {
-  "runAt": "2026-08-31T10:21:00+02:00",
-  "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 4",
-  "theme": "Restaurant",
+  "runAt": "2026-09-01T08:54:55+02:00",
+  "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 5",
+  "theme": "Bibliothek",
   "success": true,
-  "committedSha": "f3057da76633073412b632129324aee67da997e1",
+  "committedSha": "1bf3f7c5d020c994526ac5036e08afc929f5ff8d",
   "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 4/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 4/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 4/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 4/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 4/Sprüche/Abschiedsspruch.json"
+    "src/UniversalMonitorAvatar/Assets/Assets 5/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 5/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 5/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 5/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 5/Sprüche/Abschiedsspruch.json"
   ],
-  "failedStep": "",
-  "message": "Assets 4 wurde mit gültigen Restaurant-PNGs ersetzt. Alle vier PNGs wurden nach dem Commit erneut binär von GitHub geladen, per SHA-256 mit den lokalen Dateien verglichen und vollständig mit Pillow dekodiert; Format, Referenzmaße, RGBA und Transparenz sind gültig."
+  "failedStep": null,
+  "message": "Assets 5 atomar veröffentlicht. Alle fünf Dateien danach direkt von main binär geladen, SHA-256 mit lokalen geprüften Dateien identisch. PNG load/verify ohne CRC/IDAT/Truncation-Fehler; exakte Maße und Transparenz. Acht 384x512-Zellen erneut ausgeschnitten, Alpha-Bounding-Boxes geprüft und Kontaktbogen visuell geprüft. Mindestens 58 Pixel echter transparenter Rand; beide Gehframes nach rechts und gemeinsame Bodenlinie. Assets 1–4 unverändert.",
+  "validation": {
+    "referenceSets": [
+      1,
+      2,
+      3
+    ],
+    "visualReferenceImagesReviewed": 6,
+    "sha256": {
+      "Avatar/Actions.png": "2a544a1f2f2d622ede11bd1c749eef42fb3ce88ae854ba50e3616975c5df09a0",
+      "Avatar/Idle.png": "f8f88e7c5ceb5b918fe8044ee8a141691eedc86aa60a7941d5511041df6bddc1",
+      "Klingel/MonitorBell.png": "f1f6692b7aec5558c7b8e95a048c1ec5c20c652933077bd44c20b11737b07520",
+      "MonitorScene/MonitorScene.png": "ad32a00e2001a5cb49ca1c5c734099774e6b1a65d479705f38b0a9a56ac05230",
+      "Sprüche/Abschiedsspruch.json": "08fa93c4b116605ac700b94ba38758abe2e5caecd8ca45c628a665671ce8c6a8"
+    },
+    "spriteCells": [
+      {
+        "frame": 1,
+        "bbox": [
+          75,
+          91,
+          326,
+          418
+        ],
+        "marginsLTRB": [
+          75,
+          58,
+          91,
+          94
+        ],
+        "requiredMarginsLTRB": [
+          48,
+          48,
+          48,
+          48
+        ]
+      },
+      {
+        "frame": 2,
+        "bbox": [
+          63,
+          124,
+          316,
+          419
+        ],
+        "marginsLTRB": [
+          63,
+          68,
+          124,
+          93
+        ],
+        "requiredMarginsLTRB": [
+          48,
+          48,
+          48,
+          48
+        ]
+      },
+      {
+        "frame": 3,
+        "bbox": [
+          68,
+          115,
+          326,
+          417
+        ],
+        "marginsLTRB": [
+          68,
+          58,
+          115,
+          95
+        ],
+        "requiredMarginsLTRB": [
+          48,
+          48,
+          48,
+          48
+        ]
+      },
+      {
+        "frame": 4,
+        "bbox": [
+          59,
+          119,
+          308,
+          391
+        ],
+        "marginsLTRB": [
+          59,
+          76,
+          119,
+          121
+        ],
+        "requiredMarginsLTRB": [
+          48,
+          48,
+          48,
+          48
+        ]
+      },
+      {
+        "frame": 5,
+        "bbox": [
+          88,
+          108,
+          322,
+          372
+        ],
+        "marginsLTRB": [
+          88,
+          62,
+          108,
+          140
+        ],
+        "requiredMarginsLTRB": [
+          48,
+          48,
+          48,
+          48
+        ]
+      },
+      {
+        "frame": 6,
+        "bbox": [
+          85,
+          160,
+          270,
+          377
+        ],
+        "marginsLTRB": [
+          85,
+          114,
+          160,
+          135
+        ],
+        "requiredMarginsLTRB": [
+          48,
+          48,
+          48,
+          48
+        ]
+      },
+      {
+        "frame": 7,
+        "bbox": [
+          88,
+          93,
+          312,
+          398
+        ],
+        "marginsLTRB": [
+          88,
+          72,
+          93,
+          114
+        ],
+        "requiredMarginsLTRB": [
+          48,
+          48,
+          48,
+          68
+        ]
+      },
+      {
+        "frame": 8,
+        "bbox": [
+          85,
+          103,
+          279,
+          356
+        ],
+        "marginsLTRB": [
+          85,
+          105,
+          103,
+          156
+        ],
+        "requiredMarginsLTRB": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    ],
+    "walkGroundLine": 414,
+    "idleMarginsLTRB": [
+      109,
+      191,
+      143,
+      113
+    ],
+    "contactSheetReviewed": true
+  }
 }
