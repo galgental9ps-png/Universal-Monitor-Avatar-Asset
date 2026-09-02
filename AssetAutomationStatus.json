@@ -1,20 +1,32 @@
 {
+  "committedSha": "d0bdaa6b62d497a88ef0f21d08f0d5c0d8122b36",
+  "failedStep": null,
+  "message": "Assets 6 – Gartenservice atomar auf main veröffentlicht. Alle fünf Dateien direkt von main erneut heruntergeladen, SHA-256 identisch; vier PNGs vollständig geladen und separat verifiziert. Alle acht 384×512-Zellen erneut geprüft, mindestens 48px echter transparenter Rand. Lokaler und heruntergeladener Kontaktbogen visuell geprüft. Bestehende Sets und sonstige Dateien unverändert.",
   "runAt": "2026-09-02T08:11:12+02:00",
+  "success": true,
   "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 6",
   "theme": "Gartenservice",
-  "success": false,
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": null,
-  "message": "Lokale Prüfung bestanden; Veröffentlichung und Rückprüfung von main noch nicht abgeschlossen.",
   "validation": {
+    "contactSheetReviewed": true,
+    "idleMarginsLRTB": [
+      223,
+      223,
+      96,
+      96
+    ],
+    "referenceNote": "Original refs include alpha=1..16 artifacts and some cross-cell silhouettes. Fresh figures packed from complete connected silhouettes with >=48px exact transparent margins, at a smaller common scale than references.",
     "referenceSets": [
       1,
       2,
       3
     ],
-    "visualReferenceImagesReviewed": 6,
-    "contactSheetReviewed": true,
+    "sha256": {
+      "Avatar/Actions.png": "ccae703885ecac258adefc1446dc9d67f8bf1484853f46189c6f72d45036ffcf",
+      "Avatar/Idle.png": "c1463276fac411e97cde6c54b3d97ea36de1182b9562a31f3f39a839ea6b4a2c",
+      "Klingel/MonitorBell.png": "fa279dd236bbb7e2149292548586b285f5b821ca99ab3ab9a71952d6cd51b83f",
+      "MonitorScene/MonitorScene.png": "6ecf48df97c9de8aee562814ca6d745962df226c336c03dd6487a1c0bf3b7291",
+      "Sprüche/Abschiedsspruch.json": "3540b53085280bc3ebfd231f8316bf2a2451f34e86242e71919dfc1230b5dda8"
+    },
     "spriteCells": [
       {
         "bbox": [
@@ -145,19 +157,25 @@
         "requiredMinimum": 48
       }
     ],
-    "idleMarginsLRTB": [
-      223,
-      223,
-      96,
-      96
-    ],
-    "referenceNote": "Original refs include alpha=1..16 artifacts and some cross-cell silhouettes. Fresh figures packed from complete connected silhouettes with >=48px exact transparent margins, at a smaller common scale than references.",
-    "sha256": {
-      "Avatar/Actions.png": "ccae703885ecac258adefc1446dc9d67f8bf1484853f46189c6f72d45036ffcf",
-      "Avatar/Idle.png": "c1463276fac411e97cde6c54b3d97ea36de1182b9562a31f3f39a839ea6b4a2c",
-      "Klingel/MonitorBell.png": "fa279dd236bbb7e2149292548586b285f5b821ca99ab3ab9a71952d6cd51b83f",
-      "MonitorScene/MonitorScene.png": "6ecf48df97c9de8aee562814ca6d745962df226c336c03dd6487a1c0bf3b7291",
-      "Sprüche/Abschiedsspruch.json": "3540b53085280bc3ebfd231f8316bf2a2451f34e86242e71919dfc1230b5dda8"
-    }
-  }
+    "visualReferenceImagesReviewed": 6,
+    "downloadedContactSheetReviewed": true,
+    "downloadedPngDecodeAndVerify": true,
+    "allHashesMatchLocal": true,
+    "sceneCenterTransparent": true,
+    "walkingFramesFaceRight": true,
+    "walkingGroundLineExclusiveY": 464,
+    "walkingFramesDistinct": true,
+    "unchangedExistingFiles": 29,
+    "minimumSpriteMarginPx": 48,
+    "idleMinimumMarginPx": 96,
+    "generationMethod": "Built-in image generation with visual references; deterministic Pillow alpha-speckle cleanup, proportional scaling and full-silhouette packing.",
+    "generationPromptSummary": "Gartenservice: derselbe freundliche, kurz braunhaarige, bartlose Universal-Avatar in dunkelgrüner Latzhose und cremefarbenem Hemd; acht vollständige Aktionen nach rechts, Gartenhauseingang links, freie transparente Mitte, Gartenutensilien rechts, Messingklingel mit grünen Akzenten."
+  },
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 6/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 6/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 6/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 6/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 6/Sprüche/Abschiedsspruch.json"
+  ]
 }
