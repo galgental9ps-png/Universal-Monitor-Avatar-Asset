@@ -1,18 +1,12 @@
 {
-  "runAt": "2026-09-01T20:44:10.482Z",
-  "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 5",
-  "theme": "Bibliothek",
-  "success": true,
-  "committedSha": "aaef64ae598eb9b1df4123cccec28b9cdd9bd0d5",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 5/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 5/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 5/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 5/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 5/Sprüche/Abschiedsspruch.json"
-  ],
+  "runAt": "2026-09-02T08:11:12+02:00",
+  "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 6",
+  "theme": "Gartenservice",
+  "success": false,
+  "committedSha": null,
+  "verifiedPaths": [],
   "failedStep": null,
-  "message": "Bestehendes Assets 5 auf Nutzerwunsch korrigiert: Originalfiguren in Actions.png um ca. 51%, in Idle.png um 13% vergrößert und zentriert. Exakte PNG-Maße und echte RGBA-Transparenz. Acht 384x512-Zellen mit mindestens 48 transparenten Pixeln Rand; gemeinsame Geh-Bodenlinie 459. Alle fünf Dateien von origin/main erneut binär gelesen und mit lokalen Dateien verglichen. Assets 1–4, Szene, Klingel und Spruch unverändert.",
+  "message": "Lokale Prüfung bestanden; Veröffentlichung und Rückprüfung von main noch nicht abgeschlossen.",
   "validation": {
     "referenceSets": [
       1,
@@ -20,200 +14,150 @@
       3
     ],
     "visualReferenceImagesReviewed": 6,
-    "sha256": {
-      "Avatar/Actions.png": "4f0a89d3cbc521d253d0a112c1651283b207f1cf1e2913d175c93cb9844f11fc",
-      "Avatar/Idle.png": "aefc83762466dcf8a3b206a8223854f58fcf047bc627c8c24e08030d3742df1c",
-      "Klingel/MonitorBell.png": "f1f6692b7aec5558c7b8e95a048c1ec5c20c652933077bd44c20b11737b07520",
-      "MonitorScene/MonitorScene.png": "ad32a00e2001a5cb49ca1c5c734099774e6b1a65d479705f38b0a9a56ac05230",
-      "Sprüche/Abschiedsspruch.json": "08fa93c4b116605ac700b94ba38758abe2e5caecd8ca45c628a665671ce8c6a8"
-    },
+    "contactSheetReviewed": true,
     "spriteCells": [
       {
-        "frame": 1,
         "bbox": [
-          120,
-          48,
-          264,
+          107,
+          60,
+          277,
           464
         ],
-        "marginsLTRB": [
-          120,
-          120,
-          48,
+        "frame": 1,
+        "marginsLRTB": [
+          107,
+          107,
+          60,
           48
         ],
-        "requiredMarginsLTRB": [
-          48,
-          48,
-          48,
-          48
-        ],
-        "heightIncreasePercent": 50.6
+        "requiredMinimum": 48
       },
       {
-        "frame": 2,
         "bbox": [
-          93,
-          79,
+          84,
+          73,
+          300,
+          464
+        ],
+        "frame": 2,
+        "marginsLRTB": [
+          84,
+          84,
+          73,
+          48
+        ],
+        "requiredMinimum": 48
+      },
+      {
+        "bbox": [
+          94,
+          73,
           290,
           464
         ],
-        "marginsLTRB": [
-          93,
-          94,
-          79,
-          48
-        ],
-        "requiredMarginsLTRB": [
-          48,
-          48,
-          48,
-          48
-        ],
-        "heightIncreasePercent": 51.2
-      },
-      {
         "frame": 3,
-        "bbox": [
+        "marginsLRTB": [
           94,
-          81,
-          289,
-          463
-        ],
-        "marginsLTRB": [
           94,
-          95,
-          81,
-          49
-        ],
-        "requiredMarginsLTRB": [
-          48,
-          48,
-          48,
+          73,
           48
         ],
-        "heightIncreasePercent": 50.4
+        "requiredMinimum": 48
       },
       {
+        "bbox": [
+          53,
+          106,
+          331,
+          464
+        ],
         "frame": 4,
-        "bbox": [
-          65,
-          145,
-          318,
-          463
-        ],
-        "marginsLTRB": [
-          65,
-          66,
-          145,
-          49
-        ],
-        "requiredMarginsLTRB": [
-          48,
-          48,
-          48,
+        "marginsLRTB": [
+          53,
+          53,
+          106,
           48
         ],
-        "heightIncreasePercent": 50.7
+        "requiredMinimum": 48
       },
       {
+        "bbox": [
+          80,
+          62,
+          303,
+          404
+        ],
         "frame": 5,
-        "bbox": [
-          100,
-          60,
-          284,
-          349
+        "marginsLRTB": [
+          80,
+          81,
+          62,
+          108
         ],
-        "marginsLTRB": [
-          100,
-          100,
-          60,
-          163
-        ],
-        "requiredMarginsLTRB": [
-          48,
-          48,
-          48,
-          48
-        ],
-        "heightIncreasePercent": 50.8
+        "requiredMinimum": 48
       },
       {
+        "bbox": [
+          75,
+          189,
+          308,
+          464
+        ],
         "frame": 6,
-        "bbox": [
-          87,
-          235,
-          296,
-          463
-        ],
-        "marginsLTRB": [
-          87,
-          88,
-          235,
-          49
-        ],
-        "requiredMarginsLTRB": [
-          48,
-          48,
-          48,
+        "marginsLRTB": [
+          75,
+          76,
+          189,
           48
         ],
-        "heightIncreasePercent": 51
+        "requiredMinimum": 48
       },
       {
+        "bbox": [
+          67,
+          54,
+          316,
+          464
+        ],
         "frame": 7,
-        "bbox": [
-          84,
-          79,
-          299,
-          464
-        ],
-        "marginsLTRB": [
-          84,
-          85,
-          79,
+        "marginsLRTB": [
+          67,
+          68,
+          54,
           48
         ],
-        "requiredMarginsLTRB": [
-          48,
-          48,
-          48,
-          48
-        ],
-        "heightIncreasePercent": 50.6
+        "requiredMinimum": 48
       },
       {
-        "frame": 8,
         "bbox": [
-          118,
-          82,
-          266,
+          104,
+          48,
+          279,
           464
         ],
-        "marginsLTRB": [
-          118,
-          118,
-          82,
-          48
-        ],
-        "requiredMarginsLTRB": [
-          48,
-          48,
+        "frame": 8,
+        "marginsLRTB": [
+          104,
+          105,
           48,
           48
         ],
-        "heightIncreasePercent": 50.2
+        "requiredMinimum": 48
       }
     ],
-    "walkGroundLine": 459,
-    "idleMarginsLTRB": [
-      290,
-      290,
-      79,
-      79
+    "idleMarginsLRTB": [
+      223,
+      223,
+      96,
+      96
     ],
-    "contactSheetReviewed": false,
-    "idleHeightIncreasePercent": 13.1,
-    "finalSpriteSheetVisuallyReviewed": true
+    "referenceNote": "Original refs include alpha=1..16 artifacts and some cross-cell silhouettes. Fresh figures packed from complete connected silhouettes with >=48px exact transparent margins, at a smaller common scale than references.",
+    "sha256": {
+      "Avatar/Actions.png": "ccae703885ecac258adefc1446dc9d67f8bf1484853f46189c6f72d45036ffcf",
+      "Avatar/Idle.png": "c1463276fac411e97cde6c54b3d97ea36de1182b9562a31f3f39a839ea6b4a2c",
+      "Klingel/MonitorBell.png": "fa279dd236bbb7e2149292548586b285f5b821ca99ab3ab9a71952d6cd51b83f",
+      "MonitorScene/MonitorScene.png": "6ecf48df97c9de8aee562814ca6d745962df226c336c03dd6487a1c0bf3b7291",
+      "Sprüche/Abschiedsspruch.json": "3540b53085280bc3ebfd231f8316bf2a2451f34e86242e71919dfc1230b5dda8"
+    }
   }
 }
