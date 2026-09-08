@@ -1,18 +1,18 @@
 {
-  "runAt": "2026-09-07T09:36:05+02:00",
-  "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 8",
-  "theme": "IT-Service",
+  "runAt": "2026-09-08T08:08:28+02:00",
+  "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 9",
+  "theme": "Bäckerei",
   "success": true,
-  "committedSha": "29d7cc1c7e7ae3fb6a5c1229e1ef1567d5ce47ba",
+  "committedSha": "6f4f6f0e4271621591fdfc4adb02069892988956",
   "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 8/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 8/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 8/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 8/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 8/Sprüche/Abschiedsspruch.json"
+    "src/UniversalMonitorAvatar/Assets/Assets 9/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 9/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 9/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 9/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 9/Sprüche/Abschiedsspruch.json"
   ],
   "failedStep": null,
-  "message": "Assets 8 – IT-Service auf main veröffentlicht. Ein beim ersten Binärtransport gekürzter Actions-Blob wurde unmittelbar ersetzt. Danach wurden alle fünf Dateien direkt vom veröffentlichten Commit erneut heruntergeladen; SHA-256 identisch. Vier PNGs vollständig geladen und separat verifiziert. Alle acht 384×512-Zellen erneut ausgeschnitten, per Alphakanal geprüft und visuell kontrolliert: mindestens 42 Pixel echter transparenter Sicherheitsrand, keine Anschnitte oder Zellgrenzenüberschreitungen.",
+  "message": "Assets 9 – Bäckerei auf main veröffentlicht. Alle fünf Dateien wurden direkt von main erneut heruntergeladen; SHA-256 identisch. Vier PNGs vollständig geladen und separat verifiziert. Alle acht 384×512-Zellen erneut ausgeschnitten, per Alphakanal geprüft und visuell kontrolliert: mindestens 37 Pixel echter transparenter Sicherheitsrand, keine Anschnitte oder Zellgrenzenüberschreitungen.",
   "validation": {
     "visualReferenceImagesReviewed": 6,
     "referenceSets": [1, 2, 3],
@@ -23,26 +23,26 @@
     "downloadedPngDecodeAndVerify": true,
     "downloadedSpriteCellsChecked": true,
     "allHashesMatchLocal": true,
-    "minimumSpriteMarginPx": 42,
-    "idleMarginsLRTB": [253, 254, 96, 96],
+    "minimumSpriteMarginPx": 37,
+    "idleMarginsLRTB": [290, 291, 128, 128],
     "spriteCellMarginsLRTB": [
-      [111, 111, 61, 45],
-      [75, 76, 61, 45],
-      [84, 84, 60, 44],
-      [50, 51, 61, 45],
-      [48, 48, 53, 52],
-      [42, 43, 141, 45],
-      [61, 61, 61, 44],
-      [103, 103, 61, 44]
+      [111, 111, 54, 46],
+      [78, 78, 54, 46],
+      [66, 66, 54, 46],
+      [49, 49, 54, 46],
+      [60, 60, 54, 46],
+      [37, 37, 124, 46],
+      [48, 49, 54, 46],
+      [103, 104, 54, 46]
     ],
     "sha256": {
-      "Avatar/Idle.png": "d5e1de96112a26161b2904536467064938842a5c63d31a475e1760f05a69a5d1",
-      "Avatar/Actions.png": "dc492b569d1f47f089ee64a480d02329c339fe322913612cf05199e7e1ba5227",
-      "MonitorScene/MonitorScene.png": "202d247db4159dc697346cb44076d4197ae8f11dc67cbe03670b3885d6bfe25e",
-      "Klingel/MonitorBell.png": "ce42988f34c092847404c1d61cba18ed7de02ef2af0f0eaa920072a0f37bb344",
-      "Sprüche/Abschiedsspruch.json": "ee90e2cc415f36b7947ddda100ed242ea3ce6458214b9ed8a00df6af48bdf776"
+      "Avatar/Idle.png": "541c0ee2111abdb1f31e0a2b47acf8d06f076f7c6ad3f06bffebd7494eaa2e4a",
+      "Avatar/Actions.png": "79612867b36f2d23b8b7c3a6728c47c7466d8feed9e3c24e5f67977e517dd528",
+      "MonitorScene/MonitorScene.png": "c6415880939aff3e1dce98e93815f6b3ebe1c6342ccbd6d4cebed7042b9b3b74",
+      "Klingel/MonitorBell.png": "d04aac02b74c642c66f895e5e4a9c12c23fb0dfd6a0b377635cd65610d73b121",
+      "Sprüche/Abschiedsspruch.json": "978138b203de303fcde32bf87f24ec4d0e7553c4d786953dcfb5507c846f565b"
     },
-    "generationMethod": "Built-in image generation with separate transparent cutouts, proportional full-silhouette packing, dimensional normalization and Pillow verification. No copied old set.",
-    "generationPromptSummary": "IT-Service: derselbe freundliche, kurz braunhaarige, bartlose Universal-Avatar in dunkelblauem Polo und dunkler Technikerhose mit Tablet und Werkzeugtasche; acht vollständige Posen, zwei unterschiedliche nach rechts gerichtete Gehphasen, Serverraum-Eingang links, schmaler Boden, große freie transparente Mitte, Serverschrank und Werkzeugwagen rechts sowie silber-blaue Klingel."
+    "generationMethod": "Built-in image generation with a newly generated baker character, separately generated transparent scene and bell, proportional full-silhouette packing, dimensional normalization and Pillow verification. No copied old set.",
+    "generationPromptSummary": "Bäckerei: derselbe freundliche, kurz braunhaarige, bartlose Universal-Avatar in cremefarbener Bäckerjacke und brauner Arbeitshose; acht vollständige Posen, zwei nach rechts gerichtete Gehphasen, Bäckereieingang links, schmaler Boden, große freie transparente Mitte, Brotregal rechts und thematische Messingklingel."
   }
 }
