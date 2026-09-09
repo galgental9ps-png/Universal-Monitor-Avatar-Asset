@@ -1,48 +1,16 @@
 {
-  "runAt": "2026-09-09T08:43:49+02:00",
-  "targetSet": "src/UniversalMonitorAvatar/Assets/Assets 10",
-  "theme": "Apotheke",
+  "runAt": "2026-09-09T07:10:48Z",
+  "targetSet": "Assets 11",
+  "theme": "Tierarztpraxis",
   "success": true,
-  "committedSha": "2ed28899a01412be72026f00c389940a6c45f2bc",
+  "committedSha": "19bf07e1d6f7f05032da65c4ff914e2721df990b",
   "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 10/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 10/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 10/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 10/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 10/Sprüche/Abschiedsspruch.json"
+    "src/UniversalMonitorAvatar/Assets/Assets 11/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 11/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 11/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 11/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 11/Sprüche/Abschiedsspruch.json"
   ],
   "failedStep": null,
-  "message": "Assets 10 – Apotheke auf main veröffentlicht. Alle fünf Dateien wurden direkt von main erneut geladen; SHA-256 identisch. Vier PNGs vollständig geladen und separat verifiziert. Alle acht 384×512-Zellen erneut ausgeschnitten, per Alphakanal geprüft und visuell kontrolliert: mindestens 46 Pixel echter transparenter Sicherheitsrand, keine Anschnitte oder Zellgrenzenüberschreitungen.",
-  "validation": {
-    "visualReferenceImagesReviewed": 6,
-    "referenceSets": [1, 2, 3],
-    "contactSheetReviewed": true,
-    "downloadedContactSheetReviewed": true,
-    "idleFullBodyReviewed": true,
-    "sceneCompositionReviewed": true,
-    "downloadedPngDecodeAndVerify": true,
-    "downloadedSpriteCellsChecked": true,
-    "allHashesMatchLocal": true,
-    "minimumSpriteMarginPx": 46,
-    "idleMarginsLRTB": [271, 271, 128, 128],
-    "spriteCellMarginsLRTB": [
-      [113, 113, 46, 46],
-      [85, 86, 46, 46],
-      [82, 82, 46, 46],
-      [53, 54, 46, 46],
-      [78, 78, 46, 46],
-      [46, 46, 89, 46],
-      [84, 84, 46, 46],
-      [118, 118, 46, 46]
-    ],
-    "sha256": {
-      "Avatar/Idle.png": "c480e46f846e35a7d7af0bb592b7cf1d7d5e66c67e6b9bc7c9565dd13f81c0ca",
-      "Avatar/Actions.png": "6acc46051d1d44b51fdadf485cf795c91c0f60926c9757f606b001378c96633c",
-      "MonitorScene/MonitorScene.png": "3a9838d1d027ff32c1c4f4fbbf8a652bbc8f5fb7579c50e8b36a1b6d37733e15",
-      "Klingel/MonitorBell.png": "e6aa0afff50df473ca76c340dfa7c901fa3131ab925bcb2bc61f7cec660f31c2",
-      "Sprüche/Abschiedsspruch.json": "bc3ac760e8eb6c4e39fe25094f550e6f3d0f141c9d09ed29bee712abc08be730"
-    },
-    "generationMethod": "Built-in image generation with newly generated pharmacy-themed transparent cutouts, deterministic 4×2 sprite packing, dimensional normalization, Pillow verification and a fresh post-commit clone from main. No copied old set.",
-    "generationPromptSummary": "Apotheke: derselbe freundliche, kurz braunhaarige, bartlose Universal-Avatar in salbeigrüner Apothekerjacke; acht vollständige Posen, zwei unterschiedliche nach rechts gerichtete Gehphasen, Apothekeneingang links, schmaler Boden, große freie transparente Mitte, kleines Regal rechts und thematische Messingklingel."
-  }
+  "message": "Assets 11 (Tierarztpraxis) vollständig auf main veröffentlicht und nach erneutem Download verifiziert; SHA-256 identisch, PNG-Dekodierung/Maße/Alpha korrekt, alle acht Sprite-Zellen mit mindestens 40 px Sicherheitsrand."
 }
