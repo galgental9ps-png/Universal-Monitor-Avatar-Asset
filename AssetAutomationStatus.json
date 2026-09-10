@@ -1,16 +1,16 @@
 {
-  "runAt": "2026-09-09T07:10:48Z",
-  "targetSet": "Assets 11",
-  "theme": "Tierarztpraxis",
+  "runAt": "2026-09-10T08:30:56+02:00",
+  "targetSet": "Assets 12",
+  "theme": "Autowerkstatt",
   "success": true,
-  "committedSha": "19bf07e1d6f7f05032da65c4ff914e2721df990b",
+  "committedSha": "963a94475b5f5abef484a8588e978db8eaea2722",
   "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 11/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 11/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 11/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 11/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 11/Sprüche/Abschiedsspruch.json"
+    "src/UniversalMonitorAvatar/Assets/Assets 12/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 12/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 12/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 12/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 12/Sprüche/Abschiedsspruch.json"
   ],
   "failedStep": null,
-  "message": "Assets 11 (Tierarztpraxis) vollständig auf main veröffentlicht und nach erneutem Download verifiziert; SHA-256 identisch, PNG-Dekodierung/Maße/Alpha korrekt, alle acht Sprite-Zellen mit mindestens 40 px Sicherheitsrand."
+  "message": "Alle fünf Asset-Dateien wurden von main erneut geladen, per SHA-256 mit den lokal geprüften Dateien abgeglichen und vollständig verifiziert; Actions.png zusätzlich in acht 384x512-Zellen mit mindestens 48 px Sicherheitsrand geprüft."
 }
