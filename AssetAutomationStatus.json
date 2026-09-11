@@ -1,16 +1,16 @@
 {
-  "runAt": "2026-09-10T08:30:56+02:00",
-  "targetSet": "Assets 12",
-  "theme": "Autowerkstatt",
+  "runAt": "2026-09-11T08:33:40+02:00",
+  "targetSet": "Assets 13",
+  "theme": "Fotostudio",
   "success": true,
-  "committedSha": "963a94475b5f5abef484a8588e978db8eaea2722",
+  "committedSha": "2cc9392f0a31b321109224d76a06abd42727f51d",
   "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 12/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 12/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 12/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 12/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 12/Sprüche/Abschiedsspruch.json"
+    "src/UniversalMonitorAvatar/Assets/Assets 13/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 13/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 13/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 13/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 13/Sprüche/Abschiedsspruch.json"
   ],
   "failedStep": null,
-  "message": "Alle fünf Asset-Dateien wurden von main erneut geladen, per SHA-256 mit den lokal geprüften Dateien abgeglichen und vollständig verifiziert; Actions.png zusätzlich in acht 384x512-Zellen mit mindestens 48 px Sicherheitsrand geprüft."
+  "message": "Alle fünf Asset-Dateien wurden aus einem frischen main-Checkout erneut geladen und validiert; die vier PNG-Dateien stimmen per SHA-256 mit den lokal geprüften Dateien überein. Actions.png wurde erneut in acht 384x512-Zellen geprüft und besitzt mindestens 48 px transparenten Sicherheitsrand."
 }
