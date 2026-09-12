@@ -1,15 +1,24 @@
 {
-  "runAt": "2026-09-12T22:10:17.006Z",
+  "runAt": "2026-09-12T22:11:38.610Z",
   "targetDate": "2026-09-12",
   "targetSet": "Assets 14",
   "theme": "Musikschule",
-  "success": false,
-  "state": "running",
-  "failedStep": "github-upload",
-  "lastSuccessfulRun": {
-    "targetSet": "Assets 13",
-    "date": "2026-09-11",
-    "committedSha": "2cc9392f0a31b321109224d76a06abd42727f51d"
-  },
-  "message": "Vier PNGs lokal vollständig dekodiert und validiert. Zellränder mindestens 70px, Geh-Bodenlinie 430. Upload und Rückprüfung ausstehend."
+  "success": true,
+  "state": "completed",
+  "committedSha": "2df0a5317c22bdb8cd5b61b44147c8713328c4b9",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 14/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 14/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 14/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 14/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 14/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Nachholung für 12.09.2026: alle fünf Dateien in einem atomaren Commit auf main. Frischer GitHub-Checkout bestätigt SHA-256-Gleichheit aller fünf Dateien, PNG verify/load, Maße, Alpha und Zellränder mindestens 70px. Beide Gehframes nach rechts, Bodenlinie 430.",
+  "diagnosis": {
+    "scheduledRunAt": "2026-09-12T06:18:19.455953+00:00",
+    "observed": "Aufgabe aktiv und gestartet; vor Nachholung letzter Set- und Erfolgsstatus vom 11.09.2026; kein Fehlerstatus für 12.09.",
+    "rootCause": "Nicht belegt: kein konkretes Abbruchprotokoll verfügbar.",
+    "workflowChange": "Zwischenstatus vor Generierung und Upload, konkrete Fehlerprotokollierung, Wiederaufnahme und Duplikatschutz ergänzt."
+  }
 }
