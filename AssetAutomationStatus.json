@@ -1,15 +1,15 @@
 {
-  "runAt": "2026-09-12T22:04:33.177Z",
+  "runAt": "2026-09-12T22:10:17.006Z",
   "targetDate": "2026-09-12",
   "targetSet": "Assets 14",
   "theme": "Musikschule",
   "success": false,
   "state": "running",
-  "failedStep": "image-generation",
+  "failedStep": "github-upload",
   "lastSuccessfulRun": {
     "targetSet": "Assets 13",
     "date": "2026-09-11",
     "committedSha": "2cc9392f0a31b321109224d76a06abd42727f51d"
   },
-  "message": "Nachholung gestartet. Tageslauf 12.09. um 08:18 gestartet, kein Asset-Commit und kein Fehlerstatus vorhanden; genaue Abbruchursache nicht belegt."
+  "message": "Vier PNGs lokal vollständig dekodiert und validiert. Zellränder mindestens 70px, Geh-Bodenlinie 430. Upload und Rückprüfung ausstehend."
 }
