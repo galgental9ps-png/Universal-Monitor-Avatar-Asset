@@ -1,16 +1,15 @@
 {
-  "runAt": "2026-09-11T08:33:40+02:00",
-  "targetSet": "Assets 13",
-  "theme": "Fotostudio",
-  "success": true,
-  "committedSha": "2cc9392f0a31b321109224d76a06abd42727f51d",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 13/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 13/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 13/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 13/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 13/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Alle fünf Asset-Dateien wurden aus einem frischen main-Checkout erneut geladen und validiert; die vier PNG-Dateien stimmen per SHA-256 mit den lokal geprüften Dateien überein. Actions.png wurde erneut in acht 384x512-Zellen geprüft und besitzt mindestens 48 px transparenten Sicherheitsrand."
+  "runAt": "2026-09-12T22:04:33.177Z",
+  "targetDate": "2026-09-12",
+  "targetSet": "Assets 14",
+  "theme": "Musikschule",
+  "success": false,
+  "state": "running",
+  "failedStep": "image-generation",
+  "lastSuccessfulRun": {
+    "targetSet": "Assets 13",
+    "date": "2026-09-11",
+    "committedSha": "2cc9392f0a31b321109224d76a06abd42727f51d"
+  },
+  "message": "Nachholung gestartet. Tageslauf 12.09. um 08:18 gestartet, kein Asset-Commit und kein Fehlerstatus vorhanden; genaue Abbruchursache nicht belegt."
 }
