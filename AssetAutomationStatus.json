@@ -7,8 +7,8 @@
   "state": "running",
   "committedSha": null,
   "verifiedPaths": [],
-  "failedStep": "image-generation",
-  "message": "Lauf gestartet; Referenz-Spezifikation und vorhandene Sets geprüft. Bildgenerierung steht als nächster Schritt an.",
+  "failedStep": "github-upload",
+  "message": "Bildgenerierung und lokale Qualitätsprüfung abgeschlossen. PNG load/verify, RGBA, Transparenz, Maße, helle/dunkle Sichtprüfung sowie acht Zell-Crops bestanden; kleinster Sicherheitsrand 67px. Atomarer GitHub-Upload ist der nächste Schritt.",
   "lastSuccessfulRun": {
     "runAt": "2026-09-12T22:11:38.610Z",
     "targetDate": "2026-09-12",
