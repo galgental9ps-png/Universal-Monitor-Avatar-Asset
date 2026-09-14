@@ -1,36 +1,19 @@
 {
-  "runAt": "2026-09-13T06:34:08Z",
-  "targetDate": "2026-09-13",
-  "targetSet": "Assets 15",
-  "theme": "Gärtnerei",
-  "success": true,
-  "state": "completed",
-  "committedSha": "c130e1191fb84b0334ef73079169c9b25374bebe",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 15/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 15/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 15/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 15/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 15/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Alle fünf Dateien in einem atomaren Commit auf main veröffentlicht und danach aus einem frischen main-Checkout rückverifiziert: SHA-256 identisch, PNG load/verify, Maße, RGBA und Transparenz bestanden. Actions erneut in acht 384x512-Zellen geprüft; kleinster Sicherheitsrand 67px. Szenenmitte zu 100% transparent.",
+  "runAt": "2026-09-14T06:43:04Z",
+  "targetDate": "2026-09-14",
+  "targetSet": "Assets 16",
+  "theme": "Friseursalon",
+  "success": false,
+  "state": "running",
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "image-generation",
+  "message": "Lauf gestartet. Referenzspezifikation und die Universal-Referenzsets Assets 1–3 wurden geladen und visuell geprüft; Bildgenerierung steht als nächster Schritt an.",
   "lastSuccessfulRun": {
     "runAt": "2026-09-13T06:34:08Z",
     "targetDate": "2026-09-13",
     "targetSet": "Assets 15",
     "theme": "Gärtnerei",
     "committedSha": "c130e1191fb84b0334ef73079169c9b25374bebe"
-  },
-  "verification": {
-    "minimumSpriteCellMarginPx": 67,
-    "sceneCenterTransparentRatio": 1,
-    "sha256": {
-      "Avatar/Idle.png": "2fa543f30a5d4099a4dae3ace7c4b211feb61ec7bd027cc40077e2e2d60ad54b",
-      "Avatar/Actions.png": "7ac3d927329e0e50a7cad565ddf196b49e7d13573522a2bdcdc28a61740079ba",
-      "MonitorScene/MonitorScene.png": "5da71b5920488ff2d492ed18b95a5c03321ee571ac2c56a7017cdb1967b79e87",
-      "Klingel/MonitorBell.png": "0039e2d05758d8819a8296da948df9ba20138f08b0bbaf19e0ae277b86735bd1",
-      "Sprüche/Abschiedsspruch.json": "0c1b039f99664e267b941d6003bf7ad847da7a9ec6dc8f2336f4e1f20bc2c9d0"
-    }
   }
 }
