@@ -7,13 +7,24 @@
   "state": "running",
   "committedSha": null,
   "verifiedPaths": [],
-  "failedStep": "image-generation",
-  "message": "Lauf gestartet. Referenzspezifikation und die Universal-Referenzsets Assets 1–3 wurden geladen und visuell geprüft; Bildgenerierung steht als nächster Schritt an.",
+  "failedStep": "github-upload",
+  "message": "Bildgenerierung und lokale Qualitätsprüfung abgeschlossen. Vier PNGs vollständig dekodiert, Maße/RGBA/Transparenz bestanden; Actions in acht Einzelzellen und per Kontaktbogen geprüft, kleinster Sicherheitsrand 48px; Szenenmitte vollständig transparent. Atomarer Git-Data-Upload ist der nächste Schritt.",
   "lastSuccessfulRun": {
     "runAt": "2026-09-13T06:34:08Z",
     "targetDate": "2026-09-13",
     "targetSet": "Assets 15",
     "theme": "Gärtnerei",
     "committedSha": "c130e1191fb84b0334ef73079169c9b25374bebe"
+  },
+  "verification": {
+    "minimumSpriteCellMarginPx": 48,
+    "sceneCenterTransparentRatio": 1,
+    "sha256": {
+      "Avatar/Idle.png": "8615fd50a4807f5551abff6b56d0aae0f156b702f433c0e518a07332aa2aef99",
+      "Avatar/Actions.png": "b4e2191db070075733c5a785f5c1fafc591f644d9fbf20c615c92b5c2f3c3509",
+      "MonitorScene/MonitorScene.png": "8ad8ef2418946885b3b42c01de1c7a550fe4979f1cd349e264658203d75cee01",
+      "Klingel/MonitorBell.png": "b508d0f75d2f6ac88ddd7502f0b4bc8945b464d725b49e63713ceaa787b1ad37",
+      "Sprüche/Abschiedsspruch.json": "f47ea9814161df53ea0224b2055f29a5f265c942c62e86805ba94f75f284f59f"
+    }
   }
 }
