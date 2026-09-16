@@ -1,19 +1,30 @@
 {
-  "runAt": "2026-09-16T06:00:46Z",
+  "runAt": "2026-09-16T23:59:30+02:00",
   "targetDate": "2026-09-16",
   "targetSet": "Assets 17",
-  "theme": "Tierarztpraxis",
+  "theme": "Apotheke",
   "success": false,
   "state": "running",
   "committedSha": null,
   "verifiedPaths": [],
-  "failedStep": "image-generation",
-  "message": "Lauf gestartet. Referenzen und Spezifikation werden geprüft; Bildgenerierung steht als nächster Schritt an.",
+  "failedStep": "github-upload",
+  "message": "Bildgenerierung abgeschlossen und lokal geprüft. Vier PNGs sind valide, Actions.png wurde in acht 384x512-Zellen normiert; kleinster Sicherheitsrand 56 px. Upload als atomarer Git-Data-Commit ist der nächste Schritt.",
   "lastSuccessfulRun": {
     "runAt": "2026-09-14T06:43:04Z",
     "targetDate": "2026-09-14",
     "targetSet": "Assets 16",
     "theme": "Friseursalon",
     "committedSha": "23bb6e93dd6e67aae86527bfa4d0eea01218c91d"
+  },
+  "verification": {
+    "minimumSpriteCellMarginPx": 56,
+    "sceneCenterTransparentRatio": 0.9514041281,
+    "localSha256": {
+      "Avatar/Idle.png": "58854457035e77e992ecb98052fb774c5d0a3ea2a37db5f9d564ae6b4c497b06",
+      "Avatar/Actions.png": "5d4284065a16e9d655e37bd3e197d04ddd6efe825e8ab36c82250f96e3ec2ea2",
+      "MonitorScene/MonitorScene.png": "be935f50d7736e4fc54b659b7e55c19e2547a89431772bf79f35cbc6728827ce",
+      "Klingel/MonitorBell.png": "27fb90f5f121efc52d6d9e4b943e20ef110a807975b43f268741ba5bc5c08be8",
+      "Sprüche/Abschiedsspruch.json": "88e3fa110772561a255424ad55bd9b6e21fb33690656ffb4a434318b85b98822"
+    }
   }
 }
