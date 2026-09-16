@@ -1,36 +1,19 @@
 {
-  "runAt": "2026-09-14T06:43:04Z",
-  "targetDate": "2026-09-14",
-  "targetSet": "Assets 16",
-  "theme": "Friseursalon",
-  "success": true,
-  "state": "completed",
-  "committedSha": "23bb6e93dd6e67aae86527bfa4d0eea01218c91d",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 16/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 16/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 16/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 16/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 16/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Alle fünf Dateien auf main veröffentlicht und danach aus einem frischen main-Worktree rückverifiziert: SHA-256 identisch, PNG load/verify, Maße, RGBA und Transparenz bestanden. Actions erneut in acht 384x512-Zellen geprüft; kleinster Sicherheitsrand 48px. Szenenmitte vollständig transparent.",
+  "runAt": "2026-09-16T06:00:46Z",
+  "targetDate": "2026-09-16",
+  "targetSet": "Assets 17",
+  "theme": "Tierarztpraxis",
+  "success": false,
+  "state": "running",
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "image-generation",
+  "message": "Lauf gestartet. Referenzen und Spezifikation werden geprüft; Bildgenerierung steht als nächster Schritt an.",
   "lastSuccessfulRun": {
     "runAt": "2026-09-14T06:43:04Z",
     "targetDate": "2026-09-14",
     "targetSet": "Assets 16",
     "theme": "Friseursalon",
     "committedSha": "23bb6e93dd6e67aae86527bfa4d0eea01218c91d"
-  },
-  "verification": {
-    "minimumSpriteCellMarginPx": 48,
-    "sceneCenterTransparentRatio": 1,
-    "sha256": {
-      "Avatar/Idle.png": "8615fd50a4807f5551abff6b56d0aae0f156b702f433c0e518a07332aa2aef99",
-      "Avatar/Actions.png": "b4e2191db070075733c5a785f5c1fafc591f644d9fbf20c615c92b5c2f3c3509",
-      "MonitorScene/MonitorScene.png": "8ad8ef2418946885b3b42c01de1c7a550fe4979f1cd349e264658203d75cee01",
-      "Klingel/MonitorBell.png": "1b893cc68d1e408a11657cdc21727faab584ad7e59a794da611849c195e6e344",
-      "Sprüche/Abschiedsspruch.json": "f47ea9814161df53ea0224b2055f29a5f265c942c62e86805ba94f75f284f59f"
-    }
   }
 }
