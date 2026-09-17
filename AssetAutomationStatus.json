@@ -1,14 +1,14 @@
 {
-  "runAt": "2026-09-16T23:59:30+02:00",
+  "runAt": "2026-09-17T13:49:00+02:00",
   "targetDate": "2026-09-16",
   "targetSet": "Assets 17",
   "theme": "Apotheke",
   "success": false,
-  "state": "running",
+  "state": "failed",
   "committedSha": null,
   "verifiedPaths": [],
   "failedStep": "github-upload",
-  "message": "Bildgenerierung abgeschlossen und lokal geprüft. Vier PNGs sind valide, Actions.png wurde in acht 384x512-Zellen normiert; kleinster Sicherheitsrand 56 px. Upload als atomarer Git-Data-Commit ist der nächste Schritt.",
+  "message": "Bildgenerierung und lokale Qualitätsprüfung sind abgeschlossen. Vier PNGs sind valide; Actions.png wurde in acht 384x512-Zellen normiert und hat mindestens 56 px Sicherheitsrand. Der atomare Binär-Upload konnte in dieser Sitzung nicht abgeschlossen werden, weil der verfügbare GitHub-Connector lokale PNG-Dateien nicht als Dateiargument an create_blob übergeben kann; ein lokaler Dateipfad wird dort nicht als Dateibinhalt materialisiert. Es wurde deshalb kein unvollständiges Asset-Set auf main veröffentlicht.",
   "lastSuccessfulRun": {
     "runAt": "2026-09-14T06:43:04Z",
     "targetDate": "2026-09-14",
@@ -18,13 +18,12 @@
   },
   "verification": {
     "minimumSpriteCellMarginPx": 56,
-    "sceneCenterTransparentRatio": 0.9514041281,
-    "localSha256": {
-      "Avatar/Idle.png": "58854457035e77e992ecb98052fb774c5d0a3ea2a37db5f9d564ae6b4c497b06",
-      "Avatar/Actions.png": "5d4284065a16e9d655e37bd3e197d04ddd6efe825e8ab36c82250f96e3ec2ea2",
-      "MonitorScene/MonitorScene.png": "be935f50d7736e4fc54b659b7e55c19e2547a89431772bf79f35cbc6728827ce",
-      "Klingel/MonitorBell.png": "27fb90f5f121efc52d6d9e4b943e20ef110a807975b43f268741ba5bc5c08be8",
-      "Sprüche/Abschiedsspruch.json": "88e3fa110772561a255424ad55bd9b6e21fb33690656ffb4a434318b85b98822"
+    "localChecks": {
+      "pngDecode": true,
+      "rgba": true,
+      "alphaTransparency": true,
+      "actionsGrid": "4x2",
+      "actionsCellSize": "384x512"
     }
   }
 }
