@@ -7,13 +7,26 @@
   "state": "running",
   "committedSha": null,
   "verifiedPaths": [],
-  "failedStep": "image-generation",
-  "message": "Wiederaufnahme von Assets 17. Referenzprüfung und Bildgenerierung laufen; es wurde noch kein Asset-Set veröffentlicht.",
+  "failedStep": "github-upload",
+  "message": "Bildgenerierung und visuelle Prüfung abgeschlossen. Vier PNGs sind lokal vollständig dekodiert, RGBA-transparent und maßhaltig; Actions.png wurde als acht Einzelzellen geprüft und hat mindestens 70 px Sicherheitsrand. Atomarer Git-Data-Upload läuft.",
   "lastSuccessfulRun": {
     "runAt": "2026-09-14T06:43:04Z",
     "targetDate": "2026-09-14",
     "targetSet": "Assets 16",
     "theme": "Friseursalon",
     "committedSha": "23bb6e93dd6e67aae86527bfa4d0eea01218c91d"
+  },
+  "verification": {
+    "minimumSpriteCellMarginPx": 70,
+    "localChecks": {
+      "pngDecode": true,
+      "pngVerify": true,
+      "rgba": true,
+      "alphaTransparency": true,
+      "visualReferenceReview": true,
+      "visualCellContactSheet": true,
+      "actionsGrid": "4x2",
+      "actionsCellSize": "384x512"
+    }
   }
 }
