@@ -3,21 +3,34 @@
   "targetDate": "2026-09-21",
   "targetSet": "Assets 18",
   "theme": "Reisebüro",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Vier PNGs und Spruch-JSON wurden lokal erzeugt und geprüft. PNG-Dekodierung, Maße, RGBA-Transparenz, visuelle Referenzprüfung und Kontaktbogen bestanden. Alle acht Sprite-Zellen haben mindestens 62 px Sicherheitsrand. Atomarer Git-Data-Upload und Rückprüfung stehen aus.",
+  "success": true,
+  "state": "completed",
+  "committedSha": "cc24d57084a0e0504a61e93c5fd75bf8c2b9186d",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 18/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 18/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 18/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 18/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 18/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 18 wurde in einem atomaren Git-Data-Commit auf main veröffentlicht. Alle fünf Dateien wurden anschließend direkt von main erneut geladen; PNG-Dekodierung, Maße, RGBA-Transparenz, lokale/remote SHA-256-Gleichheit, JSON und acht Sprite-Zellen wurden erneut geprüft. Minimaler Zellrand: 62 px.",
   "lastSuccessfulRun": {
-    "runAt": "2026-09-20T08:16:54+02:00",
-    "targetDate": "2026-09-20",
-    "targetSet": "Assets 17",
-    "theme": "Apotheke",
-    "committedSha": "53944e4afe8694a0e82a84bc693d520bc1b2a92d"
+    "runAt": "2026-09-21T08:02:45+02:00",
+    "targetDate": "2026-09-21",
+    "targetSet": "Assets 18",
+    "theme": "Reisebüro",
+    "committedSha": "cc24d57084a0e0504a61e93c5fd75bf8c2b9186d"
   },
   "verification": {
+    "verifiedFromBranch": "main",
     "minimumSpriteCellMarginPx": 62,
+    "sha256": {
+      "Avatar/Idle.png": "3bce1ac0a6cf6cc99d025cf5c42910f9d0c3ff25d5502f5cb66cf6948ead51ab",
+      "Avatar/Actions.png": "e1593f5703f0a9f5c8e73a0cd03e1ec13f173993cfd12a3536f0798168000232",
+      "MonitorScene/MonitorScene.png": "b7697a32fa07edcc0f858a3d6e74112a1d5a3afcfec29130d929336be7783f6e",
+      "Klingel/MonitorBell.png": "0558468e08e53f03b399f8cac3c780ce92bd6963c07cd55f545eda9e87120f2c"
+    },
     "checks": {
       "pngDecode": true,
       "pngVerify": true,
@@ -28,6 +41,7 @@
       "visualCellContactSheet": true,
       "actionsGrid": "4x2",
       "actionsCellSize": "384x512",
+      "remoteSha256MatchesLocal": true,
       "jsonValid": true
     }
   }
