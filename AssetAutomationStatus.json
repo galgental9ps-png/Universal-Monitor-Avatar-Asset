@@ -7,13 +7,28 @@
   "state": "running",
   "committedSha": null,
   "verifiedPaths": [],
-  "failedStep": "image-generation",
-  "message": "Assets 18 wird für den Zieltagesstand 2026-09-21 erzeugt. Bildgenerierung und anschließende Qualitätsprüfung stehen aus.",
+  "failedStep": "github-upload",
+  "message": "Vier PNGs und Spruch-JSON wurden lokal erzeugt und geprüft. PNG-Dekodierung, Maße, RGBA-Transparenz, visuelle Referenzprüfung und Kontaktbogen bestanden. Alle acht Sprite-Zellen haben mindestens 62 px Sicherheitsrand. Atomarer Git-Data-Upload und Rückprüfung stehen aus.",
   "lastSuccessfulRun": {
     "runAt": "2026-09-20T08:16:54+02:00",
     "targetDate": "2026-09-20",
     "targetSet": "Assets 17",
     "theme": "Apotheke",
     "committedSha": "53944e4afe8694a0e82a84bc693d520bc1b2a92d"
+  },
+  "verification": {
+    "minimumSpriteCellMarginPx": 62,
+    "checks": {
+      "pngDecode": true,
+      "pngVerify": true,
+      "rgba": true,
+      "alphaTransparency": true,
+      "exactDimensions": true,
+      "visualReferenceReview": true,
+      "visualCellContactSheet": true,
+      "actionsGrid": "4x2",
+      "actionsCellSize": "384x512",
+      "jsonValid": true
+    }
   }
 }
