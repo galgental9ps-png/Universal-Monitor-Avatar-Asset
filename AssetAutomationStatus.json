@@ -3,17 +3,49 @@
   "targetDate": "2026-09-22",
   "targetSet": "Assets 19",
   "theme": "Elektrikerbetrieb",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Bildgenerierung, Referenzvergleich und lokale Qualitätsprüfung sind abgeschlossen. Alle PNGs haben die Sollmaße, RGBA-Transparenz und vollständige Dekodierung; acht Actions-Zellen wurden separat visuell und technisch geprüft. Minimaler Zellrand: 64 px. Git-Data-Upload ist der aktuelle Arbeitsschritt.",
+  "success": true,
+  "state": "completed",
+  "committedSha": "a41e562a9b506f27244cca54bef6bcb310fb0543",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 19/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 19/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 19/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 19/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 19/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 19 wurde nach Korrektur eines erkannten Übertragungsabbruchs in einem atomaren Git-Data-Commit auf main veröffentlicht. Alle fünf Dateien wurden anschließend erneut vom aktuellen main-Head geladen; lokale/remote SHA-256-Gleichheit, vollständige PNG-Dekodierung und verify, Sollmaße, RGBA-Transparenz, JSON sowie acht Sprite-Zellen wurden erneut geprüft. Minimaler Zellrand: 64 px.",
   "lastSuccessfulRun": {
-    "runAt": "2026-09-21T08:02:45+02:00",
-    "targetDate": "2026-09-21",
-    "targetSet": "Assets 18",
-    "theme": "Reisebüro",
-    "committedSha": "cc24d57084a0e0504a61e93c5fd75bf8c2b9186d"
+    "runAt": "2026-09-22T08:03:16+02:00",
+    "targetDate": "2026-09-22",
+    "targetSet": "Assets 19",
+    "theme": "Elektrikerbetrieb",
+    "committedSha": "a41e562a9b506f27244cca54bef6bcb310fb0543"
+  },
+  "verification": {
+    "verifiedFromBranch": "main",
+    "verifiedMainHead": "a41e562a9b506f27244cca54bef6bcb310fb0543",
+    "minimumSpriteCellMarginPx": 64,
+    "sha256": {
+      "Avatar/Idle.png": "3b26eade2057376208adfd50b086b05f085faaa6439e345cd30b1a2e51301788",
+      "Avatar/Actions.png": "17dcfa15aca1acb85963d07345a49f62e0e6c5cb9d3c3e0cf0cf0c0b3e8985b4",
+      "MonitorScene/MonitorScene.png": "d9ba350f9d64a3225f0a868af0b2027eaa4b5a57d85bf95d42af5ad756899fa2",
+      "Klingel/MonitorBell.png": "7b8961c420d0330c500fc8957802cf16cd0e76d3bf5dc2ae774c6802958e927c",
+      "Sprüche/Abschiedsspruch.json": "5982ec8b0bf664649948fd913201290053917d0c1ac4071924f67f3e5194f3fd"
+    },
+    "checks": {
+      "pngDecode": true,
+      "pngVerify": true,
+      "rgba": true,
+      "alphaTransparency": true,
+      "exactDimensions": true,
+      "visualReferenceReview": true,
+      "visualLightDarkBackgroundReview": true,
+      "visualCellContactSheet": true,
+      "actionsGrid": "4x2",
+      "actionsCellSize": "384x512",
+      "remoteSha256MatchesLocal": true,
+      "jsonValid": true
+    }
   }
 }
