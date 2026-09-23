@@ -4,11 +4,11 @@
   "targetSet": "Assets 20",
   "theme": "Schreinerei",
   "success": false,
-  "state": "running",
+  "state": "failed",
   "committedSha": null,
   "verifiedPaths": [],
   "failedStep": "image-generation",
-  "message": "Assets 20 wird erzeugt. Referenz-Spezifikation und vorhandene Sets wurden geprüft; Bildgenerierung und Qualitätsprüfung stehen aus.",
+  "message": "Die Actions.png-Generierung wurde zweimal geprüft und verworfen: Beide Ergebnisse enthielten einen eingebrannten braunen Hintergrund statt echter Alpha-Transparenz; einzelne Posen lagen außerdem näher an Zellgrenzen als gefordert. Danach war die lokale Ausführungsumgebung nicht mehr verbunden (environment_offline), sodass Chroma-Key-Korrektur, Pillow-Dekodierung, Zell-Crops und atomarer Binär-Upload nicht sicher durchgeführt werden konnten. Es wurde kein Assets-20-Ordner veröffentlicht.",
   "lastSuccessfulRun": {
     "runAt": "2026-09-22T08:03:16+02:00",
     "targetDate": "2026-09-22",
