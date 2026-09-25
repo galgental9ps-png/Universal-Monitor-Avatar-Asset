@@ -7,8 +7,8 @@
   "state": "running",
   "committedSha": null,
   "verifiedPaths": [],
-  "failedStep": "image-generation",
-  "message": "Wiederaufnahme: GitHub-main geprüft; Assets 20 ist nicht vorhanden. Pflichtreferenzen Assets 1–3 (Idle und Actions) wurden lokal als Bilder geladen, visuell kontrolliert und technisch vermessen. Bildgenerierung läuft.",
+  "failedStep": "github-upload",
+  "message": "Bildgenerierung und lokale Qualitätsprüfung abgeschlossen: vier PNGs vollständig mit Pillow load/verify geprüft, exakte Maße/RGBA/echte Transparenz bestätigt, acht Actions-Zellen einzeln ausgeschnitten und visuell auf hell/dunkel kontrolliert; kleinster Sicherheitsrand 61 px. Atomarer GitHub-Upload läuft.",
   "lastSuccessfulRun": {
     "runAt": "2026-09-22T08:03:16+02:00",
     "targetDate": "2026-09-22",
