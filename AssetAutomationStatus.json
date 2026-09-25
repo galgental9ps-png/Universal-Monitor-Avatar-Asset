@@ -3,17 +3,23 @@
   "targetDate": "2026-09-25",
   "targetSet": "Assets 20",
   "theme": "Schreinerei",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Bildgenerierung und lokale Qualitätsprüfung abgeschlossen: vier PNGs vollständig mit Pillow load/verify geprüft, exakte Maße/RGBA/echte Transparenz bestätigt, acht Actions-Zellen einzeln ausgeschnitten und visuell auf hell/dunkel kontrolliert; kleinster Sicherheitsrand 61 px. Atomarer GitHub-Upload läuft.",
+  "success": true,
+  "state": "completed",
+  "committedSha": "730ae6beba86b6de2a5b1904c43ca9b3808f351f",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 20/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 20/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 20/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 20/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 20/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 20 vollständig auf main veröffentlicht und vom aktuellen main-Head erneut geprüft: alle fünf Dateien vorhanden; vier PNGs bytegenau per SHA-256 bestätigt, vollständig mit Pillow load/verify dekodiert, exakte Maße/RGBA/echte Transparenz bestätigt; Actions erneut in acht 384x512-Zellen geprüft, kleinster Sicherheitsrand 62 px; Spruch-JSON gültig.",
   "lastSuccessfulRun": {
-    "runAt": "2026-09-22T08:03:16+02:00",
-    "targetDate": "2026-09-22",
-    "targetSet": "Assets 19",
-    "theme": "Elektrikerbetrieb",
-    "committedSha": "a41e562a9b506f27244cca54bef6bcb310fb0543"
+    "runAt": "2026-09-25T08:01:57+02:00",
+    "targetDate": "2026-09-25",
+    "targetSet": "Assets 20",
+    "theme": "Schreinerei",
+    "committedSha": "730ae6beba86b6de2a5b1904c43ca9b3808f351f"
   }
 }
