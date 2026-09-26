@@ -7,8 +7,8 @@
   "state": "running",
   "committedSha": null,
   "verifiedPaths": [],
-  "failedStep": "image-generation",
-  "message": "GitHub-main und vorhandene Sets geprüft; Assets 21 ist der nächste freie Ordner. Referenzbilder Assets 1–3 (Idle und Actions) wurden lokal geladen und visuell geprüft. Bildgenerierung läuft. Die ausdrücklich angeforderte Assets-20-Idle-Reparatur wurde zuvor separat auf main veröffentlicht und rückverifiziert (bd0997ef2068bc5dd14335b2cc34e0de40fef685).",
+  "failedStep": "github-upload",
+  "message": "Bildgenerierung und lokale Qualitätsprüfung abgeschlossen: vier PNGs mit Pillow load/verify geprüft; exakte Maße, RGBA und echte Transparenz bestätigt; acht Actions-Zellen separat ausgeschnitten und visuell auf hell/dunkel geprüft; kleinster Sicherheitsrand 62 px. Atomarer GitHub-Upload läuft.",
   "lastSuccessfulRun": {
     "runAt": "2026-09-25T08:01:57+02:00",
     "targetDate": "2026-09-25",
