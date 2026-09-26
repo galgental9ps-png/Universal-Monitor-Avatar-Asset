@@ -3,17 +3,23 @@
   "targetDate": "2026-09-26",
   "targetSet": "Assets 21",
   "theme": "Bäckerei",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Bildgenerierung und lokale Qualitätsprüfung abgeschlossen: vier PNGs mit Pillow load/verify geprüft; exakte Maße, RGBA und echte Transparenz bestätigt; acht Actions-Zellen separat ausgeschnitten und visuell auf hell/dunkel geprüft; kleinster Sicherheitsrand 62 px. Atomarer GitHub-Upload läuft.",
+  "success": true,
+  "state": "completed",
+  "committedSha": "8158136d1045bc853508be7c2a3c65627080d9ca",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 21/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 21/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 21/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 21/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 21/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 21 vollständig auf main veröffentlicht und vom aktuellen main-Head erneut geprüft: alle fünf Dateien vorhanden; vier PNGs bytegenau per SHA-256 bestätigt, vollständig mit Pillow load/verify dekodiert, exakte Maße/RGBA/echte Transparenz bestätigt; Actions erneut in acht 384x512-Zellen geprüft, kleinster Sicherheitsrand 62 px; Spruch-JSON gültig. Assets-20-Idle-Reparatur zusätzlich zuvor separat rückverifiziert.",
   "lastSuccessfulRun": {
-    "runAt": "2026-09-25T08:01:57+02:00",
-    "targetDate": "2026-09-25",
-    "targetSet": "Assets 20",
-    "theme": "Schreinerei",
-    "committedSha": "730ae6beba86b6de2a5b1904c43ca9b3808f351f"
+    "runAt": "2026-09-26T08:00:12+02:00",
+    "targetDate": "2026-09-26",
+    "targetSet": "Assets 21",
+    "theme": "Bäckerei",
+    "committedSha": "8158136d1045bc853508be7c2a3c65627080d9ca"
   }
 }
