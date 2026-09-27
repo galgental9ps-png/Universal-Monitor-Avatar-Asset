@@ -3,17 +3,17 @@
   "targetDate": "2026-09-27",
   "targetSet": "Assets 22",
   "theme": "Gärtnerei",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Bildgenerierung und lokale Qualitätsprüfung abgeschlossen. Ein zunächst zellübergreifender Renn-Frame wurde vor Upload verworfen und vollständig neu zugeschnitten. Vier PNGs mit Pillow load/verify geprüft; exakte Maße, RGBA und Transparenz bestätigt; acht Zellen visuell auf hell/dunkel geprüft; kleinster Sicherheitsrand 62 px. Atomarer Upload läuft.",
-  "lastSuccessfulRun": {
-    "runAt": "2026-09-26T08:00:12+02:00",
-    "targetDate": "2026-09-26",
-    "targetSet": "Assets 21",
-    "theme": "Bäckerei",
-    "committedSha": "8158136d1045bc853508be7c2a3c65627080d9ca"
-  }
+  "success": true,
+  "state": "completed",
+  "committedSha": "a057503de610ba554bbbc1b824ae516b3d2bf701",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 22/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 22/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 22/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 22/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 22/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 22 – Gärtnerei atomar veröffentlicht und von main erneut heruntergeladen. Alle fünf Dateien stimmen bytegenau per SHA-256 überein; vier PNGs bestanden Pillow load/verify, Maße, RGBA und Transparenz. Actions.png wurde erneut in acht 384x512-Zellen geprüft; kleinster Sicherheitsrand 62 px.",
+  "lastSuccessfulRun": "2026-09-27T08:01:08+02:00"
 }
