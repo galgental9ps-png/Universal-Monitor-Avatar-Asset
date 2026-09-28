@@ -1,19 +1,13 @@
 {
-  "runAt": "2026-09-27T08:01:08+02:00",
-  "targetDate": "2026-09-27",
-  "targetSet": "Assets 22",
-  "theme": "Gärtnerei",
-  "success": true,
-  "state": "completed",
-  "committedSha": "a057503de610ba554bbbc1b824ae516b3d2bf701",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 22/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 22/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 22/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 22/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 22/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Assets 22 – Gärtnerei atomar veröffentlicht und von main erneut heruntergeladen. Alle fünf Dateien stimmen bytegenau per SHA-256 überein; vier PNGs bestanden Pillow load/verify, Maße, RGBA und Transparenz. Actions.png wurde erneut in acht 384x512-Zellen geprüft; kleinster Sicherheitsrand 62 px.",
+  "runAt": "2026-09-28T08:04:02+02:00",
+  "targetDate": "2026-09-28",
+  "targetSet": "Assets 23",
+  "theme": "Buchhandlung",
+  "success": false,
+  "state": "running",
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "image-generation",
+  "message": "Assets 23 – Buchhandlung: Pflichtreferenzen Assets 1–3 und AssetSetSpec geprüft; Bildgenerierung läuft.",
   "lastSuccessfulRun": "2026-09-27T08:01:08+02:00"
 }
