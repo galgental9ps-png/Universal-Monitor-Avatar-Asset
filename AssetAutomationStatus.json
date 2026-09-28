@@ -7,7 +7,7 @@
   "state": "running",
   "committedSha": null,
   "verifiedPaths": [],
-  "failedStep": "image-generation",
-  "message": "Assets 23 – Buchhandlung: Pflichtreferenzen Assets 1–3 und AssetSetSpec geprüft; Bildgenerierung läuft.",
+  "failedStep": "github-upload",
+  "message": "Assets 23 – Buchhandlung lokal vollständig geprüft: vier PNGs bestanden Pillow load/verify, Maße, RGBA und Transparenz; Actions.png visuell als acht Einzelzellen geprüft, kleinster Sicherheitsrand 62 px. Atomarer GitHub-Upload ist der nächste Schritt.",
   "lastSuccessfulRun": "2026-09-27T08:01:08+02:00"
 }
