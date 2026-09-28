@@ -3,11 +3,17 @@
   "targetDate": "2026-09-28",
   "targetSet": "Assets 23",
   "theme": "Buchhandlung",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Assets 23 – Buchhandlung lokal vollständig geprüft: vier PNGs bestanden Pillow load/verify, Maße, RGBA und Transparenz; Actions.png visuell als acht Einzelzellen geprüft, kleinster Sicherheitsrand 62 px. Atomarer GitHub-Upload ist der nächste Schritt.",
-  "lastSuccessfulRun": "2026-09-27T08:01:08+02:00"
+  "success": true,
+  "state": "completed",
+  "committedSha": "51a9b4944dc7482c5de5cebcac2e7f75407a1135",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 23/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 23/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 23/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 23/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 23/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 23 – Buchhandlung atomar veröffentlicht und von main erneut heruntergeladen. Alle fünf Dateien stimmen bytegenau per SHA-256 überein; vier PNGs bestanden erneut Pillow load/verify, Maße, RGBA und Transparenz. Actions.png wurde erneut in acht 384x512-Zellen geprüft; kleinster Sicherheitsrand 62 px.",
+  "lastSuccessfulRun": "2026-09-28T08:04:02+02:00"
 }
