@@ -3,11 +3,17 @@
   "targetDate": "2026-09-29",
   "targetSet": "Assets 24",
   "theme": "Optiker",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Assets 24 – Optiker lokal vollständig geprüft: vier PNGs bestanden Pillow load/verify, Maße, RGBA und Transparenz; Actions.png visuell als acht Einzelzellen geprüft, isolierte Schattenreste entfernt, einheitliche Bodenlinie, kleinster Sicherheitsrand 62 px. Atomarer GitHub-Upload ist der nächste Schritt.",
-  "lastSuccessfulRun": "2026-09-28T08:04:02+02:00"
+  "success": true,
+  "state": "completed",
+  "committedSha": "ab09236cbbd47eff801df85ee221a763e114d3d4",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 24/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 24/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 24/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 24/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 24/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 24 – Optiker atomar veröffentlicht und von main erneut heruntergeladen. Alle fünf Dateien stimmen bytegenau per SHA-256 überein; vier PNGs bestanden erneut Pillow load/verify, Maße, RGBA und Transparenz. Actions.png wurde erneut in acht 384x512-Zellen geprüft; kleinster Sicherheitsrand 62 px.",
+  "lastSuccessfulRun": "2026-09-29T07:58:06+02:00"
 }
