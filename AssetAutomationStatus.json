@@ -1,19 +1,13 @@
 {
-  "runAt": "2026-09-28T08:04:02+02:00",
-  "targetDate": "2026-09-28",
-  "targetSet": "Assets 23",
-  "theme": "Buchhandlung",
-  "success": true,
-  "state": "completed",
-  "committedSha": "51a9b4944dc7482c5de5cebcac2e7f75407a1135",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 23/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 23/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 23/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 23/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 23/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Assets 23 – Buchhandlung atomar veröffentlicht und von main erneut heruntergeladen. Alle fünf Dateien stimmen bytegenau per SHA-256 überein; vier PNGs bestanden erneut Pillow load/verify, Maße, RGBA und Transparenz. Actions.png wurde erneut in acht 384x512-Zellen geprüft; kleinster Sicherheitsrand 62 px.",
+  "runAt": "2026-09-29T07:58:06+02:00",
+  "targetDate": "2026-09-29",
+  "targetSet": "Assets 24",
+  "theme": "Optiker",
+  "success": false,
+  "state": "running",
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "image-generation",
+  "message": "Assets 24 – Optiker: Pflichtreferenzen Assets 1–3 und AssetSetSpec geprüft; Bildgenerierung läuft.",
   "lastSuccessfulRun": "2026-09-28T08:04:02+02:00"
 }
