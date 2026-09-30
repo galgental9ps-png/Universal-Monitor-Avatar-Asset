@@ -1,19 +1,13 @@
 {
-  "runAt": "2026-09-29T07:58:06+02:00",
-  "targetDate": "2026-09-29",
-  "targetSet": "Assets 24",
-  "theme": "Optiker",
-  "success": true,
-  "state": "completed",
-  "committedSha": "ab09236cbbd47eff801df85ee221a763e114d3d4",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 24/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 24/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 24/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 24/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 24/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Assets 24 – Optiker atomar veröffentlicht und von main erneut heruntergeladen. Alle fünf Dateien stimmen bytegenau per SHA-256 überein; vier PNGs bestanden erneut Pillow load/verify, Maße, RGBA und Transparenz. Actions.png wurde erneut in acht 384x512-Zellen geprüft; kleinster Sicherheitsrand 62 px.",
+  "runAt": "2026-09-30T08:02:05+02:00",
+  "targetDate": "2026-09-30",
+  "targetSet": "Assets 25",
+  "theme": "Zahnarztpraxis",
+  "success": false,
+  "state": "running",
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "image-generation",
+  "message": "Assets 25 – Zahnarztpraxis: Pflichtreferenzen Assets 1–3 und AssetSetSpec geprüft; Bildgenerierung läuft.",
   "lastSuccessfulRun": "2026-09-29T07:58:06+02:00"
 }
