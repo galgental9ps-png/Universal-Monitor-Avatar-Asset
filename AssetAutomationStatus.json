@@ -1,19 +1,13 @@
 {
-  "runAt": "2026-09-30T08:02:05+02:00",
-  "targetDate": "2026-09-30",
-  "targetSet": "Assets 25",
-  "theme": "Zahnarztpraxis",
-  "success": true,
-  "state": "completed",
-  "committedSha": "619a5fc3135064a8bea821bf830a7266ad4720cc",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 25/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 25/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 25/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 25/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 25/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Assets 25 – Zahnarztpraxis vollständig auf main veröffentlicht und erneut verifiziert: fünf Dateien bytegenau per SHA-256, vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen; acht Sprite-Zellen erneut geprüft, kleinster Sicherheitsrand 62 px.",
+  "runAt": "2026-10-01T08:00:54+02:00",
+  "targetDate": "2026-10-01",
+  "targetSet": "Assets 26",
+  "theme": "Fahrradwerkstatt",
+  "success": false,
+  "state": "running",
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "image-generation",
+  "message": "Assets 26 – Fahrradwerkstatt: Pflichtreferenzen Assets 1–3 und AssetSetSpec geprüft; Bildgenerierung läuft.",
   "lastSuccessfulRun": "2026-09-30T08:02:05+02:00"
 }
