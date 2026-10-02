@@ -1,19 +1,13 @@
 {
-  "runAt": "2026-10-01T08:00:54+02:00",
-  "targetDate": "2026-10-01",
-  "targetSet": "Assets 26",
-  "theme": "Fahrradwerkstatt",
-  "success": true,
-  "state": "completed",
-  "committedSha": "483783f91f65a7396a9990177dfdddeabfab859a",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 26/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 26/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 26/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 26/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 26/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Assets 26 – Fahrradwerkstatt vollständig auf main veröffentlicht und erneut verifiziert: fünf Dateien bytegenau per SHA-256, vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen; acht Sprite-Zellen erneut geprüft, kleinster Sicherheitsrand 62 px.",
+  "runAt": "2026-10-02T07:59:13+02:00",
+  "targetDate": "2026-10-02",
+  "targetSet": "Assets 27",
+  "theme": "Physiotherapie",
+  "success": false,
+  "state": "running",
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "image-generation",
+  "message": "Assets 27 – Physiotherapie: Pflichtreferenzen Assets 1–3 und AssetSetSpec geprüft; Bildgenerierung läuft.",
   "lastSuccessfulRun": "2026-10-01T08:00:54+02:00"
 }
