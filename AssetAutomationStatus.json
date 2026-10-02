@@ -7,7 +7,7 @@
   "state": "running",
   "committedSha": null,
   "verifiedPaths": [],
-  "failedStep": "image-generation",
-  "message": "Assets 27 – Physiotherapie: Pflichtreferenzen Assets 1–3 und AssetSetSpec geprüft; Bildgenerierung läuft.",
+  "failedStep": "github-upload",
+  "message": "Assets 27 – Physiotherapie: Bildprüfung und technische Prüfung bestanden; acht Sprite-Zellen separat geprüft, kleinster Sicherheitsrand 62 px. Atomarer Git-Data-Upload läuft.",
   "lastSuccessfulRun": "2026-10-01T08:00:54+02:00"
 }
