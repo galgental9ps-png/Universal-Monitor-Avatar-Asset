@@ -1,19 +1,13 @@
 {
-  "runAt": "2026-10-02T07:59:13+02:00",
-  "targetDate": "2026-10-02",
-  "targetSet": "Assets 27",
-  "theme": "Physiotherapie",
-  "success": true,
-  "state": "completed",
-  "committedSha": "1b587646a5e4be5eb831ba7851d9394dc3b9a784",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 27/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 27/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 27/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 27/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 27/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Assets 27 – Physiotherapie vollständig auf main veröffentlicht und erneut verifiziert: fünf Dateien bytegenau per SHA-256, vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen; acht Sprite-Zellen erneut geprüft, kleinster Sicherheitsrand 62 px.",
+  "runAt": "2026-10-05T08:18:45+02:00",
+  "targetDate": "2026-10-05",
+  "targetSet": "Assets 28",
+  "theme": "Immobilienbüro",
+  "success": false,
+  "state": "running",
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "image-generation",
+  "message": "AssetSetSpec und die aktuellen GitHub-Blob-Stände der Referenzsets Assets 1–3 wurden geprüft; Idle- und Actions-Referenzen visuell kontrolliert. Bildgenerierung für Assets 28 – Immobilienbüro läuft.",
   "lastSuccessfulRun": "2026-10-02T07:59:13+02:00"
 }
