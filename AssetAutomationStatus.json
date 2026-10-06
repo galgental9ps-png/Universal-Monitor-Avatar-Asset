@@ -1,19 +1,13 @@
 {
-  "runAt": "2026-10-05T08:18:45+02:00",
-  "targetDate": "2026-10-05",
+  "runAt": "2026-10-06T08:02:13+02:00",
+  "targetDate": "2026-10-06",
   "targetSet": "Assets 28",
   "theme": "Immobilienbüro",
-  "success": true,
-  "state": "completed",
-  "committedSha": "aa2a080e1c37da37d020d53da50e9c44d27ced7a",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 28/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 28/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 28/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 28/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 28/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Assets 28 – Immobilienbüro vollständig auf main veröffentlicht und erneut verifiziert: fünf Dateien bytegenau per SHA-256, vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen; acht Sprite-Zellen erneut geprüft, kleinster Sicherheitsrand 62 px.",
+  "success": false,
+  "state": "running",
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "github-upload",
+  "message": "Explizit angeforderte Reparatur von Assets 28: Idle und alle acht Actions-Zellen lokal dekodiert, visuell geprüft und ohne transparenten Leerraum unter dem Motiv ausgerichtet. Binärer Git-Data-Upload und Rückprüfung stehen aus.",
   "lastSuccessfulRun": "2026-10-05T08:18:45+02:00"
 }
