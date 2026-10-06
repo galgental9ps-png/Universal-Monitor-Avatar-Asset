@@ -3,11 +3,17 @@
   "targetDate": "2026-10-06",
   "targetSet": "Assets 28",
   "theme": "Immobilienbüro",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Explizit angeforderte Reparatur von Assets 28: Idle und alle acht Actions-Zellen lokal dekodiert, visuell geprüft und ohne transparenten Leerraum unter dem Motiv ausgerichtet. Binärer Git-Data-Upload und Rückprüfung stehen aus.",
-  "lastSuccessfulRun": "2026-10-05T08:18:45+02:00"
+  "success": true,
+  "state": "completed",
+  "committedSha": "45dc61b124fb02f5c4d100ca1ee538c04e03fb73",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 28/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 28/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 28/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 28/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 28/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 28 – Immobilienbüro nach Nutzerhinweis repariert und von main rückgeprüft: Idle sowie alle acht 384x512-Aktionszellen haben 0 px transparenten Leerraum unter dem Motiv; seitlich mindestens 62 px und oben mindestens 135 px Abstand, keine Zellüberschneidung. Alle fünf Dateien vorhanden; vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen geprüft; SHA-256 der reparierten Binärdateien stimmt bytegenau.",
+  "lastSuccessfulRun": "2026-10-06T08:02:13+02:00"
 }
