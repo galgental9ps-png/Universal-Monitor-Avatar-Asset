@@ -3,11 +3,17 @@
   "targetDate": "2026-10-06",
   "targetSet": "Assets 29",
   "theme": "Versicherungsbüro",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Assets 29 lokal vollständig erzeugt und geprüft: vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen; alle acht Actions-Zellen einzeln sowie auf hellem und dunklem Kontaktbogen geprüft. Unterer Alpha-Rand bei Idle und allen Zellen 0 px, kleinster Seitenrand 62 px, kleinster oberer Zellrand 135 px. Atomarer Git-Data-Upload steht aus.",
+  "success": true,
+  "state": "completed",
+  "committedSha": "01c7b36b67665d43814d8e68338b73b0c511de86",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 29/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 29/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 29/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 29/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 29/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 29 – Versicherungsbüro vollständig in einem atomaren Git-Data-Commit auf main veröffentlicht und erneut verifiziert: fünf Dateien bytegenau per SHA-256, vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen; Szene mit großer transparenter Mitte; acht Sprite-Zellen separat geprüft. Unterer Alpha-Rand bei Idle und allen Zellen 0 px, kleinster Seitenrand 62 px, kleinster oberer Zellrand 135 px.",
   "lastSuccessfulRun": "2026-10-06T08:02:13+02:00"
 }
