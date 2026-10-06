@@ -1,19 +1,13 @@
 {
   "runAt": "2026-10-06T08:02:13+02:00",
   "targetDate": "2026-10-06",
-  "targetSet": "Assets 28",
-  "theme": "Immobilienbüro",
-  "success": true,
-  "state": "completed",
-  "committedSha": "45dc61b124fb02f5c4d100ca1ee538c04e03fb73",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 28/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 28/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 28/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 28/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 28/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Assets 28 – Immobilienbüro nach Nutzerhinweis repariert und von main rückgeprüft: Idle sowie alle acht 384x512-Aktionszellen haben 0 px transparenten Leerraum unter dem Motiv; seitlich mindestens 62 px und oben mindestens 135 px Abstand, keine Zellüberschneidung. Alle fünf Dateien vorhanden; vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen geprüft; SHA-256 der reparierten Binärdateien stimmt bytegenau.",
+  "targetSet": "Assets 29",
+  "theme": "Versicherungsbüro",
+  "success": false,
+  "state": "running",
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "image-generation",
+  "message": "Nächstes freies Set Assets 29 vorbereitet. AssetSetSpec sowie Actions/Idle der Referenzsets 1–3 wurden gelesen und visuell geprüft; Bildgenerierung für das Thema Versicherungsbüro läuft.",
   "lastSuccessfulRun": "2026-10-06T08:02:13+02:00"
 }
