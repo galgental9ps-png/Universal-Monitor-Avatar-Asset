@@ -7,7 +7,7 @@
   "state": "running",
   "committedSha": null,
   "verifiedPaths": [],
-  "failedStep": "image-generation",
-  "message": "Nächstes freies Set Assets 29 vorbereitet. AssetSetSpec sowie Actions/Idle der Referenzsets 1–3 wurden gelesen und visuell geprüft; Bildgenerierung für das Thema Versicherungsbüro läuft.",
+  "failedStep": "github-upload",
+  "message": "Assets 29 lokal vollständig erzeugt und geprüft: vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen; alle acht Actions-Zellen einzeln sowie auf hellem und dunklem Kontaktbogen geprüft. Unterer Alpha-Rand bei Idle und allen Zellen 0 px, kleinster Seitenrand 62 px, kleinster oberer Zellrand 135 px. Atomarer Git-Data-Upload steht aus.",
   "lastSuccessfulRun": "2026-10-06T08:02:13+02:00"
 }
