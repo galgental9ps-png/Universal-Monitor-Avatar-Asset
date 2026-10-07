@@ -7,7 +7,7 @@
   "state": "running",
   "committedSha": null,
   "verifiedPaths": [],
-  "failedStep": "image-generation",
-  "message": "Assets 30 als nächstes freies Set vorgesehen. AssetSetSpec sowie Actions/Idle der Referenzsets 1–3 wurden gelesen und visuell geprüft; Bildgenerierung für das Thema Malerbetrieb läuft.",
+  "failedStep": "github-upload",
+  "message": "Assets 30 – Malerbetrieb lokal vollständig erzeugt und geprüft: vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen; Szene mit großer transparenter Mitte; acht Sprite-Zellen separat technisch und visuell geprüft. Unterer Alpha-Rand bei Idle und allen Zellen 0 px, kleinster Seitenrand 62 px, kleinster oberer Zellrand 135 px. Nächster Schritt: atomarer Git-Data-Upload und Rückprüfung von main.",
   "lastSuccessfulRun": "2026-10-06T08:02:13+02:00"
 }
