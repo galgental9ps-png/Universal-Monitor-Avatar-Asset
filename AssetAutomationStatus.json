@@ -3,11 +3,17 @@
   "targetDate": "2026-10-07",
   "targetSet": "Assets 30",
   "theme": "Malerbetrieb",
-  "success": false,
-  "state": "running",
-  "committedSha": "e3abf37c8c26191adef66dcbee6b208ef78966dc",
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Rückprüfung des ersten Uploads fehlgeschlagen: Actions.png wurde verkürzt übertragen (lokal 790120 Bytes, auf main 786442 Bytes; SHA-256 lokal 11373b1455dfca829c5e91306a05f26a6cda44c53f061b654992993f9b4c9ddf, GitHub 5def1c274ff353921accd1ed19aad972d0a47b51d8cc44aff2c8cc0bb8283782). Pillow-Fehler: SyntaxError: broken PNG file (chunk b'PT\\\\x90\\\\xb2'). Begrenzter Wiederholungsversuch mit segmentierter Base64-Einlesung läuft.",
-  "lastSuccessfulRun": "2026-10-06T08:02:13+02:00"
+  "success": true,
+  "state": "completed",
+  "committedSha": "968afff0da0532d763676538ee130400f476612d",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 30/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 30/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 30/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 30/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 30/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 30 – Malerbetrieb vollständig auf main veröffentlicht und nach einem erkannten verkürzten Actions-Upload korrigiert sowie erneut verifiziert: fünf Dateien bytegenau per SHA-256, vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen; Szene mit großer transparenter Mitte; acht Sprite-Zellen separat technisch und visuell geprüft. Unterer Alpha-Rand bei Idle und allen Zellen 0 px, kleinster Seitenrand 62 px, kleinster oberer Zellrand 135 px.",
+  "lastSuccessfulRun": "2026-10-07T08:01:18+02:00"
 }
