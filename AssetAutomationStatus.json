@@ -5,9 +5,9 @@
   "theme": "Malerbetrieb",
   "success": false,
   "state": "running",
-  "committedSha": null,
+  "committedSha": "e3abf37c8c26191adef66dcbee6b208ef78966dc",
   "verifiedPaths": [],
   "failedStep": "github-upload",
-  "message": "Assets 30 – Malerbetrieb lokal vollständig erzeugt und geprüft: vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen; Szene mit großer transparenter Mitte; acht Sprite-Zellen separat technisch und visuell geprüft. Unterer Alpha-Rand bei Idle und allen Zellen 0 px, kleinster Seitenrand 62 px, kleinster oberer Zellrand 135 px. Nächster Schritt: atomarer Git-Data-Upload und Rückprüfung von main.",
+  "message": "Rückprüfung des ersten Uploads fehlgeschlagen: Actions.png wurde verkürzt übertragen (lokal 790120 Bytes, auf main 786442 Bytes; SHA-256 lokal 11373b1455dfca829c5e91306a05f26a6cda44c53f061b654992993f9b4c9ddf, GitHub 5def1c274ff353921accd1ed19aad972d0a47b51d8cc44aff2c8cc0bb8283782). Pillow-Fehler: SyntaxError: broken PNG file (chunk b'PT\\\\x90\\\\xb2'). Begrenzter Wiederholungsversuch mit segmentierter Base64-Einlesung läuft.",
   "lastSuccessfulRun": "2026-10-06T08:02:13+02:00"
 }
