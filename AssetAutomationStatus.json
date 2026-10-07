@@ -1,19 +1,13 @@
 {
-  "runAt": "2026-10-06T08:02:13+02:00",
-  "targetDate": "2026-10-06",
-  "targetSet": "Assets 29",
-  "theme": "Versicherungsbüro",
-  "success": true,
-  "state": "completed",
-  "committedSha": "01c7b36b67665d43814d8e68338b73b0c511de86",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 29/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 29/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 29/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 29/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 29/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Assets 29 – Versicherungsbüro vollständig in einem atomaren Git-Data-Commit auf main veröffentlicht und erneut verifiziert: fünf Dateien bytegenau per SHA-256, vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen; Szene mit großer transparenter Mitte; acht Sprite-Zellen separat geprüft. Unterer Alpha-Rand bei Idle und allen Zellen 0 px, kleinster Seitenrand 62 px, kleinster oberer Zellrand 135 px.",
+  "runAt": "2026-10-07T08:01:18+02:00",
+  "targetDate": "2026-10-07",
+  "targetSet": "Assets 30",
+  "theme": "Malerbetrieb",
+  "success": false,
+  "state": "running",
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "image-generation",
+  "message": "Assets 30 als nächstes freies Set vorgesehen. AssetSetSpec sowie Actions/Idle der Referenzsets 1–3 wurden gelesen und visuell geprüft; Bildgenerierung für das Thema Malerbetrieb läuft.",
   "lastSuccessfulRun": "2026-10-06T08:02:13+02:00"
 }
