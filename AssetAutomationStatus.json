@@ -7,7 +7,7 @@
   "state": "running",
   "committedSha": null,
   "verifiedPaths": [],
-  "failedStep": "image-generation",
-  "message": "Assets 31 – Sanitärbetrieb gestartet. GitHub-Stand, AssetSetSpec.json und die sechs verbindlichen Referenzbilder aus Assets 1–3 wurden geprüft. Bildgenerierung und anschließende Qualitätsprüfung laufen.",
+  "failedStep": "github-upload",
+  "message": "Assets 31 – Sanitärbetrieb lokal vollständig erzeugt und geprüft: vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen; helle und dunkle Kontaktbogenprüfung; anfängliche Schuhfragmente aus der oberen Reihe entfernt; Szene mit großer transparenter Mitte. Acht Sprite-Zellen separat geprüft, 0 px Bodenspalt, kleinster Seitenrand 62 px, kleinster oberer Zellrand 135 px. Nächster Schritt: atomarer Git-Data-Upload und Rückprüfung von main.",
   "lastSuccessfulRun": "2026-10-07T08:01:18+02:00"
 }
