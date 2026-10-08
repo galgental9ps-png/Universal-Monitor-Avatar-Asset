@@ -3,11 +3,17 @@
   "targetDate": "2026-10-08",
   "targetSet": "Assets 31",
   "theme": "Sanitärbetrieb",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Assets 31 – Sanitärbetrieb lokal vollständig erzeugt und geprüft: vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen; helle und dunkle Kontaktbogenprüfung; anfängliche Schuhfragmente aus der oberen Reihe entfernt; Szene mit großer transparenter Mitte. Acht Sprite-Zellen separat geprüft, 0 px Bodenspalt, kleinster Seitenrand 62 px, kleinster oberer Zellrand 135 px. Nächster Schritt: atomarer Git-Data-Upload und Rückprüfung von main.",
-  "lastSuccessfulRun": "2026-10-07T08:01:18+02:00"
+  "success": true,
+  "state": "completed",
+  "committedSha": "dd62b6e987132161827a520b767672107c214085",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 31/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 31/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 31/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 31/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 31/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 31 – Sanitärbetrieb vollständig in einem atomaren Git-Data-Commit auf main veröffentlicht und erneut verifiziert: fünf Dateien bytegenau per SHA-256, vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen; helle und dunkle Kontaktbogenprüfung; anfängliche Schuhfragmente entfernt; Szene mit großer transparenter Mitte; acht Sprite-Zellen separat geprüft. Unterer Alpha-Rand bei Idle und allen Zellen 0 px, kleinster Seitenrand 62 px, kleinster oberer Zellrand 135 px.",
+  "lastSuccessfulRun": "2026-10-08T08:03:15+02:00"
 }
