@@ -1,19 +1,13 @@
 {
-  "runAt": "2026-10-08T08:03:15+02:00",
-  "targetDate": "2026-10-08",
-  "targetSet": "Assets 31",
-  "theme": "Sanitärbetrieb",
-  "success": true,
-  "state": "completed",
-  "committedSha": "dd62b6e987132161827a520b767672107c214085",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 31/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 31/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 31/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 31/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 31/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Assets 31 – Sanitärbetrieb vollständig in einem atomaren Git-Data-Commit auf main veröffentlicht und erneut verifiziert: fünf Dateien bytegenau per SHA-256, vier PNGs mit Pillow load/verify, RGBA/Transparenz und exakten Maßen; helle und dunkle Kontaktbogenprüfung; anfängliche Schuhfragmente entfernt; Szene mit großer transparenter Mitte; acht Sprite-Zellen separat geprüft. Unterer Alpha-Rand bei Idle und allen Zellen 0 px, kleinster Seitenrand 62 px, kleinster oberer Zellrand 135 px.",
+  "runAt": "2026-10-09T08:04:25+02:00",
+  "targetDate": "2026-10-09",
+  "targetSet": "Assets 32",
+  "theme": "Steuerkanzlei",
+  "success": false,
+  "state": "running",
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "image-generation",
+  "message": "Assets 32 – Steuerkanzlei gestartet. GitHub-Stand, AssetSetSpec.json und die sechs verbindlichen Referenzbilder aus Assets 1–3 wurden geprüft. Bildgenerierung und anschließende Qualitätsprüfung laufen.",
   "lastSuccessfulRun": "2026-10-08T08:03:15+02:00"
 }
