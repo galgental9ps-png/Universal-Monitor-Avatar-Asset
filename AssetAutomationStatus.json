@@ -1,19 +1,13 @@
 {
-  "runAt": "2026-10-09T08:04:25+02:00",
-  "targetDate": "2026-10-09",
-  "targetSet": "Assets 32",
-  "theme": "Steuerkanzlei",
-  "success": true,
-  "state": "completed",
-  "committedSha": "850846b4e78cab0a6804bf8545fd95d0c2e6578f",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 32/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 32/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 32/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 32/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 32/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Assets 32 – Steuerkanzlei vollständig auf main veröffentlicht und erneut heruntergeladen. Alle vier PNGs wurden bytegenau per SHA-256 verglichen, vollständig dekodiert und hinsichtlich Maße, RGBA und echter Transparenz erneut geprüft. Actions.png wurde erneut in acht 384x512-Zellen zerlegt; kleinster Seitenrand 62 px, kleinster Kopfrand 135 px, Unterkantenabstand in jeder Zelle 0 px. Kontaktbogen und MonitorScene-Komposition bestanden.",
+  "runAt": "2026-10-10T07:58:51+02:00",
+  "targetDate": "2026-10-10",
+  "targetSet": "Assets 33",
+  "theme": "Hörakustik",
+  "success": false,
+  "state": "running",
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "image-generation",
+  "message": "Assets 33 – Hörakustik gestartet. GitHub-Stand, AssetSetSpec.json und die sechs verbindlichen Referenzbilder aus Assets 1–3 wurden geprüft. Bildgenerierung und anschließende Qualitätsprüfung laufen.",
   "lastSuccessfulRun": "2026-10-09T08:04:25+02:00"
 }
