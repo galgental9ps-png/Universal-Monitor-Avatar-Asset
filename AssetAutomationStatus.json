@@ -3,11 +3,17 @@
   "targetDate": "2026-10-10",
   "targetSet": "Assets 33",
   "theme": "Hörakustik",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Lokale Bild- und JSON-Prüfung bestanden: vier PNGs vollständig dekodiert und separat verifiziert, exakte Maße und RGBA-Transparenz bestätigt, helle und dunkle Kontaktbögen visuell geprüft. Alle acht Action-Zellen sind vollständig getrennt; kleinster Seitenrand 62 px, kleinster Kopfrand 135 px, Unterkantenabstand jeweils 0 px. Atomarer Git-Data-Upload läuft.",
-  "lastSuccessfulRun": "2026-10-09T08:04:25+02:00"
+  "success": true,
+  "state": "completed",
+  "committedSha": "4efc98f30d9ced3a30da89212ff6efeef9f462d2",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 33/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 33/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 33/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 33/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 33/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 33 – Hörakustik vollständig auf main veröffentlicht und erneut heruntergeladen. Alle vier PNGs wurden bytegenau per SHA-256 verglichen, vollständig dekodiert und hinsichtlich Maße, RGBA und echter Transparenz erneut geprüft. Actions.png wurde erneut in acht 384x512-Zellen zerlegt; kleinster Seitenrand 62 px, kleinster Kopfrand 135 px, Unterkantenabstand in jeder Zelle 0 px. Kontaktbogen und MonitorScene-Komposition bestanden.",
+  "lastSuccessfulRun": "2026-10-10T07:58:51+02:00"
 }
