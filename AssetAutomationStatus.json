@@ -7,7 +7,7 @@
   "state": "running",
   "committedSha": null,
   "verifiedPaths": [],
-  "failedStep": "image-generation",
-  "message": "Assets 33 – Hörakustik gestartet. GitHub-Stand, AssetSetSpec.json und die sechs verbindlichen Referenzbilder aus Assets 1–3 wurden geprüft. Bildgenerierung und anschließende Qualitätsprüfung laufen.",
+  "failedStep": "github-upload",
+  "message": "Lokale Bild- und JSON-Prüfung bestanden: vier PNGs vollständig dekodiert und separat verifiziert, exakte Maße und RGBA-Transparenz bestätigt, helle und dunkle Kontaktbögen visuell geprüft. Alle acht Action-Zellen sind vollständig getrennt; kleinster Seitenrand 62 px, kleinster Kopfrand 135 px, Unterkantenabstand jeweils 0 px. Atomarer Git-Data-Upload läuft.",
   "lastSuccessfulRun": "2026-10-09T08:04:25+02:00"
 }
