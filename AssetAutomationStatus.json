@@ -3,11 +3,17 @@
   "targetDate": "2026-10-11",
   "targetSet": "Assets 34",
   "theme": "Architekturbüro",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Assets 34 – Architekturbüro lokal vollständig geprüft. Vier PNGs bestehen Pillow load/verify, exakte Maße, RGBA und Transparenz. Alle acht Action-Zellen wurden einzeln und als helle/dunkle Kontaktbögen geprüft; kleinster Seitenrand 62 px, kleinster oberer Rand 135 px, Bottom-Gap in allen Zellen und Idle exakt 0 px. Atomarer Git-Data-Upload läuft.",
-  "lastSuccessfulRun": "2026-10-10T07:58:51+02:00"
+  "success": true,
+  "state": "completed",
+  "committedSha": "ce03e38885249e5b0b9b3893ac737776819dc846",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 34/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 34/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 34/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 34/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 34/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 34 – Architekturbüro vollständig veröffentlicht und aus main erneut verifiziert. Alle fünf Dateien sind vorhanden; SHA-256 stimmt bytegenau mit den lokal geprüften Dateien überein. Alle PNGs bestehen erneut Pillow load/verify, Maße, RGBA und Transparenz. Actions: acht Zellen erneut geprüft, kleinster Seitenrand 62 px, kleinster oberer Rand 135 px, Bottom-Gap in allen Zellen 0 px; Idle Bottom-Gap ebenfalls 0 px.",
+  "lastSuccessfulRun": "2026-10-11T07:58:05+02:00"
 }
