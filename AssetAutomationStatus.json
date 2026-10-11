@@ -7,7 +7,7 @@
   "state": "running",
   "committedSha": null,
   "verifiedPaths": [],
-  "failedStep": "image-generation",
-  "message": "Assets 34 – Architekturbüro gestartet. GitHub-Stand, AssetSetSpec.json und die sechs verbindlichen Referenzbilder aus Assets 1–3 wurden geprüft. Bildgenerierung und anschließende Qualitätsprüfung laufen.",
+  "failedStep": "github-upload",
+  "message": "Assets 34 – Architekturbüro lokal vollständig geprüft. Vier PNGs bestehen Pillow load/verify, exakte Maße, RGBA und Transparenz. Alle acht Action-Zellen wurden einzeln und als helle/dunkle Kontaktbögen geprüft; kleinster Seitenrand 62 px, kleinster oberer Rand 135 px, Bottom-Gap in allen Zellen und Idle exakt 0 px. Atomarer Git-Data-Upload läuft.",
   "lastSuccessfulRun": "2026-10-10T07:58:51+02:00"
 }
