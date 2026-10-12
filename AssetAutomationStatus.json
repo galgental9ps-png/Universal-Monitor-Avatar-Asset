@@ -3,11 +3,17 @@
   "targetDate": "2026-10-12",
   "targetSet": "Assets 35",
   "theme": "Rechtsanwaltskanzlei",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Assets 35 – Rechtsanwaltskanzlei lokal vollständig geprüft. Vier PNGs bestehen Pillow load/verify, exakte Maße, RGBA und Transparenz. Alle acht Action-Zellen wurden einzeln sowie auf hellen und dunklen Kontaktbögen geprüft; kleinster Seitenrand 62 px, kleinster oberer Rand 135 px, Bottom-Gap in allen Action-Zellen und Idle exakt 0 px. Atomarer Git-Data-Upload läuft.",
-  "lastSuccessfulRun": "2026-10-11T07:58:05+02:00"
+  "success": true,
+  "state": "completed",
+  "committedSha": "3302b3a350fe8e06de147234c421f30919d83889",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 35/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 35/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 35/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 35/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 35/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 35 – Rechtsanwaltskanzlei vollständig veröffentlicht und aus main erneut verifiziert. Alle fünf Dateien sind vorhanden; SHA-256 stimmt bytegenau mit den lokal geprüften Dateien überein. Alle PNGs bestehen erneut Pillow load/verify, Maße, RGBA und Transparenz. Actions: acht Zellen erneut geprüft, kleinster Seitenrand 62 px, kleinster oberer Rand 135 px, Bottom-Gap in allen Zellen 0 px; Idle Bottom-Gap ebenfalls 0 px.",
+  "lastSuccessfulRun": "2026-10-12T08:04:35+02:00"
 }
