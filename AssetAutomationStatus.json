@@ -3,11 +3,17 @@
   "targetDate": "2026-10-13",
   "targetSet": "Assets 36",
   "theme": "Schlüsseldienst",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Lokale Bildprüfung bestanden: vier PNGs vollständig dekodiert und verifiziert; Actions in acht Zellen geprüft, seitliche Sicherheitsränder mindestens 62 px, obere Ränder mindestens 135 px, Bodenspalt 0 px; Idle, Szene, Klingel und JSON geprüft. Atomarer Git-Data-Upload läuft.",
-  "lastSuccessfulRun": "2026-10-12T08:04:35+02:00"
+  "success": true,
+  "state": "completed",
+  "committedSha": "c9cfd0e430664d66c1d9f6d9d495c65e8440f597",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 36/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 36/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 36/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 36/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 36/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 36 – Schlüsseldienst vollständig auf main veröffentlicht und erneut verifiziert. Vier PNGs dekodiert/verifiziert, lokale und heruntergeladene SHA-256 stimmen bytegenau überein; acht Actions-Zellen geprüft (seitlich mindestens 62 px, oben mindestens 135 px, Bodenspalt 0 px), Szene, Klingel und JSON bestanden.",
+  "lastSuccessfulRun": "2026-10-13T08:02:22+02:00"
 }
