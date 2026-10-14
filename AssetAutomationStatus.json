@@ -3,11 +3,17 @@
   "targetDate": "2026-10-14",
   "targetSet": "Assets 37",
   "theme": "Pflegedienst",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Lokale Qualitätsprüfung bestanden: vier PNGs vollständig mit Pillow geladen und separat verifiziert; Actions in acht Zellen auf hellem und dunklem Hintergrund geprüft (seitlich mindestens 62 px, oben mindestens 135 px, Bodenspalt 0 px); Idle, Szene, Klingel und JSON bestanden. Atomarer Git-Data-Upload läuft.",
-  "lastSuccessfulRun": "2026-10-13T08:02:22+02:00"
+  "success": true,
+  "state": "completed",
+  "committedSha": "0c25e558730033b750d884441e5e8eca11b3042e",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 37/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 37/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 37/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 37/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 37/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 37 – Pflegedienst vollständig auf main veröffentlicht und erneut verifiziert. Vier PNGs dekodiert/verifiziert; lokale und heruntergeladene SHA-256 stimmen bytegenau überein; acht Actions-Zellen erneut geprüft (seitlich mindestens 62 px, oben mindestens 135 px, Bodenspalt 0 px), Szene, Klingel und JSON bestanden.",
+  "lastSuccessfulRun": "2026-10-14T08:01:13+02:00"
 }
