@@ -3,11 +3,17 @@
   "targetDate": "2026-10-15",
   "targetSet": "Assets 38",
   "theme": "Gebäudereinigung",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Assets 38 – Gebäudereinigung wurde lokal vollständig erzeugt und geprüft. Vier PNGs bestanden Pillow load/verify, Maße, RGBA und Transparenz. Actions: acht Einzelzellen visuell geprüft; Sicherheitsränder mindestens 62 px seitlich, 135 px oben und 24 px unten. Atomarer Git-Data-Upload läuft.",
-  "lastSuccessfulRun": "2026-10-14T08:01:13+02:00"
+  "success": true,
+  "state": "completed",
+  "committedSha": "9a768fbf437e60107b76f609d49b6c9ec572234f",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 38/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 38/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 38/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 38/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 38/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 38 – Gebäudereinigung wurde atomar auf main veröffentlicht und anschließend frisch von GitHub geladen. Alle fünf Dateien stimmen per SHA-256 bytegenau mit den geprüften lokalen Dateien überein. Vier PNGs bestanden erneut Pillow load/verify, Maße, RGBA und Transparenz. Alle acht Actions-Zellen wurden erneut geprüft: mindestens 62 px seitlich, 135 px oben und 24 px unten; keine Zellüberschreitung.",
+  "lastSuccessfulRun": "2026-10-15T08:03:56+02:00"
 }
