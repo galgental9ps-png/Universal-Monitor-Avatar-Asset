@@ -3,11 +3,17 @@
   "targetDate": "2026-10-17",
   "targetSet": "Assets 40",
   "theme": "Hausmeisterservice",
-  "success": false,
-  "state": "running",
-  "committedSha": null,
-  "verifiedPaths": [],
-  "failedStep": "github-upload",
-  "message": "Assets 40 – Hausmeisterservice: Vier PNGs und die Abschiedsspruch-JSON haben die lokale technische und visuelle Prüfung bestanden. Actions-Zellen: mindestens 62 px seitlich, 135 px oben und 24 px unten; Idle: 323 px seitlich, 713 px oben, 48 px unten. Upload und Rückprüfung stehen aus.",
-  "lastSuccessfulRun": "2026-10-16T07:55:36+02:00"
+  "success": true,
+  "state": "completed",
+  "committedSha": "2740952e2b1a8f033f4ff3d8da80212ebdc7aea4",
+  "verifiedPaths": [
+    "src/UniversalMonitorAvatar/Assets/Assets 40/Avatar/Idle.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 40/Avatar/Actions.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 40/MonitorScene/MonitorScene.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 40/Klingel/MonitorBell.png",
+    "src/UniversalMonitorAvatar/Assets/Assets 40/Sprüche/Abschiedsspruch.json"
+  ],
+  "failedStep": null,
+  "message": "Assets 40 – Hausmeisterservice wurde atomar auf main veröffentlicht und anschließend frisch von GitHub geladen. Alle fünf Dateien stimmen per SHA-256 bytegenau mit den geprüften lokalen Dateien überein. Vier PNGs bestanden erneut Pillow load/verify, exakte Maße, RGBA und echte Transparenz. Alle acht Actions-Zellen wurden erneut geprüft: mindestens 62 px seitlich, 135 px oben und 24 px unten; keine Zellüberschreitung. Idle besitzt 323 px Seitenrand, 713 px oberen und 48 px unteren Rand.",
+  "lastSuccessfulRun": "2026-10-17T08:03:53+02:00"
 }
