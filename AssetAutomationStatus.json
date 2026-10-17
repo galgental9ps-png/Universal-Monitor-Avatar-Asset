@@ -1,19 +1,13 @@
 {
-  "runAt": "2026-10-16T07:55:36+02:00",
-  "targetDate": "2026-10-16",
-  "targetSet": "Assets 39",
-  "theme": "Umzugsservice",
-  "success": true,
-  "state": "completed",
-  "committedSha": "6d55aef456d4fca0d6c8cffe83654d6c7ae27e78",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 39/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 39/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 39/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 39/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 39/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Assets 39 – Umzugsservice wurde atomar auf main veröffentlicht und anschließend frisch von GitHub geladen. Alle fünf Dateien stimmen per SHA-256 bytegenau mit den geprüften lokalen Dateien überein. Vier PNGs bestanden erneut Pillow load/verify, Maße, RGBA und Transparenz. Alle acht Actions-Zellen wurden erneut geprüft: mindestens 62 px seitlich, 135 px oben und 24 px unten; keine Zellüberschreitung.",
+  "runAt": "2026-10-17T08:03:53+02:00",
+  "targetDate": "2026-10-17",
+  "targetSet": "Assets 40",
+  "theme": "Hausmeisterservice",
+  "success": false,
+  "state": "running",
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "image-generation",
+  "message": "Assets 40 – Hausmeisterservice: Referenzspezifikation, Set-Nummerierung und die Universal-Referenzbilder aus Assets 1–3 sowie die aktuelle Avatar-Identität wurden geprüft. Die Bildgenerierung läuft.",
   "lastSuccessfulRun": "2026-10-16T07:55:36+02:00"
 }
