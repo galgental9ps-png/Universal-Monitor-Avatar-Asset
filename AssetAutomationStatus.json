@@ -7,7 +7,7 @@
   "state": "running",
   "committedSha": null,
   "verifiedPaths": [],
-  "failedStep": "image-generation",
-  "message": "Assets 41 – Sicherheitsdienst: Referenzspezifikation, Set-Nummerierung und die Universal-Referenzbilder aus Assets 1–3 sowie die aktuelle Avatar-Identität wurden geprüft. Die Bildgenerierung läuft.",
+  "failedStep": "github-upload",
+  "message": "Assets 41 – Sicherheitsdienst: Vier PNGs und die Abschiedsspruch-JSON haben die lokale technische und visuelle Prüfung bestanden. Actions-Zellen: mindestens 62 px seitlich, 135 px oben und 24 px unten; Idle: 356 px seitlich, 713 px oben, 48 px unten. Upload und Rückprüfung stehen aus.",
   "lastSuccessfulRun": "2026-10-17T08:03:53+02:00"
 }
