@@ -1,19 +1,13 @@
 {
-  "runAt": "2026-10-17T08:03:53+02:00",
-  "targetDate": "2026-10-17",
-  "targetSet": "Assets 40",
-  "theme": "Hausmeisterservice",
-  "success": true,
-  "state": "completed",
-  "committedSha": "2740952e2b1a8f033f4ff3d8da80212ebdc7aea4",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 40/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 40/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 40/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 40/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 40/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Assets 40 – Hausmeisterservice wurde atomar auf main veröffentlicht und anschließend frisch von GitHub geladen. Alle fünf Dateien stimmen per SHA-256 bytegenau mit den geprüften lokalen Dateien überein. Vier PNGs bestanden erneut Pillow load/verify, exakte Maße, RGBA und echte Transparenz. Alle acht Actions-Zellen wurden erneut geprüft: mindestens 62 px seitlich, 135 px oben und 24 px unten; keine Zellüberschreitung. Idle besitzt 323 px Seitenrand, 713 px oberen und 48 px unteren Rand.",
+  "runAt": "2026-10-18T08:00:08+02:00",
+  "targetDate": "2026-10-18",
+  "targetSet": "Assets 41",
+  "theme": "Sicherheitsdienst",
+  "success": false,
+  "state": "running",
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "image-generation",
+  "message": "Assets 41 – Sicherheitsdienst: Referenzspezifikation, Set-Nummerierung und die Universal-Referenzbilder aus Assets 1–3 sowie die aktuelle Avatar-Identität wurden geprüft. Die Bildgenerierung läuft.",
   "lastSuccessfulRun": "2026-10-17T08:03:53+02:00"
 }
