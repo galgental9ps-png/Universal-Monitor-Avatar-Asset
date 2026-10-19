@@ -1,19 +1,13 @@
 {
-  "runAt": "2026-10-18T08:00:08+02:00",
-  "targetDate": "2026-10-18",
-  "targetSet": "Assets 41",
-  "theme": "Sicherheitsdienst",
-  "success": true,
-  "state": "completed",
-  "committedSha": "d2ffff49fd30ece0dac13950b6bc940e8343f404",
-  "verifiedPaths": [
-    "src/UniversalMonitorAvatar/Assets/Assets 41/Avatar/Idle.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 41/Avatar/Actions.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 41/MonitorScene/MonitorScene.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 41/Klingel/MonitorBell.png",
-    "src/UniversalMonitorAvatar/Assets/Assets 41/Sprüche/Abschiedsspruch.json"
-  ],
-  "failedStep": null,
-  "message": "Assets 41 – Sicherheitsdienst wurde atomar auf main veröffentlicht und anschließend frisch von GitHub geladen. Alle fünf Dateien stimmen per SHA-256 bytegenau mit den geprüften lokalen Dateien überein. Vier PNGs bestanden erneut Pillow load/verify, exakte Maße, RGBA und echte Transparenz. Alle acht Actions-Zellen wurden erneut geprüft: mindestens 62 px seitlich, 135 px oben und 24 px unten; keine Zellüberschreitung. Idle besitzt 356 px Seitenrand, 713 px oberen und 48 px unteren Rand.",
+  "runAt": "2026-10-19T21:45:34+02:00",
+  "targetDate": "2026-10-19",
+  "targetSet": "Assets 42",
+  "theme": "Elektrofachbetrieb",
+  "success": false,
+  "state": "running",
+  "committedSha": null,
+  "verifiedPaths": [],
+  "failedStep": "image-generation",
+  "message": "Lauf gestartet. GitHub-Status, vorhandene Set-Ordner und Referenz-Spezifikation wurden geprüft. Assets 42 ist die nächste freie Nummer. Bildgenerierung und Qualitätsprüfung stehen aus.",
   "lastSuccessfulRun": "2026-10-18T08:00:08+02:00"
 }
